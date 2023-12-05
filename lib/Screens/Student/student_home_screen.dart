@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:new_mumlly_app/Common/side_bar.dart';
 import 'package:new_mumlly_app/Screens/Student/notice%20screen.dart';
+import 'package:new_mumlly_app/Screens/my_app_screen/add_new_child.dart';
 import 'package:new_mumlly_app/Screens/my_app_screen/allEventPage.dart';
 import 'package:new_mumlly_app/Screens/my_app_screen/child_managment.dart';
 import 'package:new_mumlly_app/Screens/my_app_screen/eventDetails.dart';
@@ -100,7 +101,7 @@ class _StudentHomeScreenState extends State<StudentHomeScreen> {
                 ),
               ),
             ),
-            const SizedBox(height: 20,),
+            const SizedBox(height: 10,),
 
             SizedBox(
               height: SizeConfig.screenHeight * 0.7,
@@ -148,65 +149,184 @@ class _StudentHomeScreenState extends State<StudentHomeScreen> {
                       ),
                     ),
                     const SizedBox(height: 20,),
-                    ListView(
-                      shrinkWrap: true,
-                      children: [
-                        CarouselSlider(
-                          items: [
-                            //1st Image of Slider
-                            Card(
-                              clipBehavior: Clip.antiAliasWithSaveLayer,
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(10.0),
+                    SingleChildScrollView(
+                        scrollDirection: Axis.horizontal,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Container(
+                              height: 280,
+                              width: 250,
+                              padding:EdgeInsets.only(left: 15),
+
+                              margin: EdgeInsets.all(15),
+                              decoration: BoxDecoration(
+                                color: Colors.grey.shade200,
+
+                                borderRadius: BorderRadius.circular(20),
                               ),
-                              //elevation: 5,
-                              child:Row(
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+
                                 children: [
-                                  Image.asset(AppImage.getPath("card11"),fit: BoxFit.fill,),
+
+                                  Container(
+                                    height: 230,
+                                    width: 220,
+                                      decoration: BoxDecoration(
+                                        color: Colors.grey.shade400,
+
+                                        borderRadius: BorderRadius.circular(5),
+                                      ),
+
+                                    padding: EdgeInsets.all(3),
+                                    child:Image.asset(
+                                      AppImage.getPath("main_pic"),
+                                      fit: BoxFit.fill,)
+                                  ),
+
+                                  Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      SizedBox(width: 10,),
+                                      Text(
+                                        '  Tom',
+                                        style: TextStyle(fontSize: 18,
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.black),
+                                      ),
+                                      Text(
+                                        '  School Name',
+                                        style: TextStyle(
+                                            fontSize: 15,
+
+                                            color: Colors.blue),
+                                      ),
+                                    ],
+                                  )
+
                                 ],
                               ),
+
                             ),
-                            //2nd Image of Slider
-                            Card(
-                              clipBehavior: Clip.antiAliasWithSaveLayer,
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(10.0),
+                            Container(
+                              height: 280,
+                              width: 250,
+                              padding:EdgeInsets.only(left: 15),
+
+                              margin: EdgeInsets.all(15),
+                              decoration: BoxDecoration(
+                                color: Colors.grey.shade200,
+
+                                borderRadius: BorderRadius.circular(20),
                               ),
-                              //elevation: 5,
-                              child:Row(
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+
                                 children: [
-                                  Image.asset(AppImage.getPath("card22"),fit: BoxFit.fill,),
+
+                                  Container(
+                                      height: 230,
+                                      width: 220,
+                                      decoration: BoxDecoration(
+                                        color: Colors.grey.shade400,
+
+                                        borderRadius: BorderRadius.circular(5),
+                                      ),
+
+                                      padding: EdgeInsets.all(3),
+                                      child:Image.asset(
+                                        AppImage.getPath("main_pic"),
+                                        fit: BoxFit.fill,)
+                                  ),
+
+                                  Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      SizedBox(width: 10,),
+                                      Text(
+                                        '  Tom',
+                                        style: TextStyle(fontSize: 18,
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.black),
+                                      ),
+                                      Text(
+                                        '  School Name',
+                                        style: TextStyle(
+                                            fontSize: 15,
+
+                                            color: Colors.blue),
+                                      ),
+                                    ],
+                                  )
+
                                 ],
                               ),
+
                             ),
-                            //3rd Image of Slider
-                            Card(
-                              clipBehavior: Clip.antiAliasWithSaveLayer,
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(10.0),
-                              ),
-                              //elevation: 5,
-                              child:Row(
-                                children: [
-                                  Image.asset(AppImage.getPath("card33"),fit: BoxFit.fill,),
-                                ],
+                            InkWell(
+                                onTap: () => Navigator.push(
+                                            context,
+                                     MaterialPageRoute(builder: (context) => add_new_child()),
+                                 ),
+
+                              child: Container(
+                                height: 280,
+                                width: 250,
+                                padding:EdgeInsets.only(left: 15),
+
+                                margin: EdgeInsets.all(15),
+                                decoration: BoxDecoration(
+                                  color: Colors.grey.shade200,
+
+                                  borderRadius: BorderRadius.circular(20),
+                                ),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+
+                                  children: [
+
+                                    Container(
+                                        height: 80,
+                                        width: 80,
+                                        margin: EdgeInsets.all(70),
+                                        decoration: BoxDecoration(
+
+
+                                          borderRadius: BorderRadius.circular(5),
+                                        ),
+
+                                        padding: EdgeInsets.all(10),
+                                        child:Image.asset(
+                                          AppImage.getPath("plus_icon"),
+                                          fit: BoxFit.fill,)
+                                    ),
+
+                                    Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        SizedBox(width: 10,),
+                                        Text(
+                                          ' Add New Child',
+                                          style: TextStyle(fontSize: 25,
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.black),
+                                        ),
+
+                                      ],
+                                    )
+
+                                  ],
+                                ),
+
                               ),
                             ),
+
                           ],
-                          //Slider Container properties
-                          options: CarouselOptions(
-                            height: 160.0,
-                            enlargeCenterPage: true,
-                            autoPlay: true,
-                            aspectRatio: 40 / 4,
-                            autoPlayCurve: Curves.fastOutSlowIn,
-                            enableInfiniteScroll: true,
-                            autoPlayAnimationDuration: Duration(milliseconds: 800),
-                            viewportFraction: 0.8,
-                          ),
-                        ),
-                      ],
+                        )
                     ),
+
                     const SizedBox(height: 20,),
                     Padding(
                       padding: EdgeInsets.only(left: 15.0),
@@ -414,7 +534,7 @@ class _StudentHomeScreenState extends State<StudentHomeScreen> {
                 ),
               ),
             ),
-            const SizedBox(height: 20,),
+
           ],
         ),
       ),

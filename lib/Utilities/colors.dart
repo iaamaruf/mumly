@@ -10,6 +10,9 @@ class AppColor{
   static Color defaultColor4  = const Color(0xFFb20513);
   static Color defaultColor5 = const Color(0xFFd4c035);
   static Color newButtonColor = const Color(0xff4646b6);
+  static Color newBlue = const Color(0xff568AF1);
+
+
 
   ///Figma Color
   static Color fTextColor = const Color(0xff5667FD);
@@ -139,6 +142,16 @@ class AppGradient{
               AppColor.white,
             ]);
       }
+      case "box1" : {
+        return LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors:  [
+              AppColor.newBlue,
+              AppColor.white,
+            ]);
+      }
+
 
       default: {
         //default
@@ -150,6 +163,8 @@ class AppGradient{
               AppColor.defaultColorLight,
             ]);
       }
+
+
     }
   }
 }

@@ -61,6 +61,30 @@ class AppImage{
       case "default_photo" : {
         return "assets/images/Rectangle 18.png";
       }
+      case "main_pic" : {
+        return "assets/icon_img/Rectangle 18.png";
+      }
+      case "main_clock" : {
+        return "assets/icon_img/clock.png";
+      }
+      case "people_icon" : {
+        return "assets/icon_img/Vector.png";
+      }
+      case "home_icon" : {
+        return "assets/icon_img/Vector (1).png";
+      }
+      case "attendence_icon" : {
+        return "assets/icon_img/Vector2.png";
+      }
+      case "plus_icon" : {
+        return "assets/icon_img/pplus.png";
+      }
+
+
+
+
+
+
       default : {
         return "assets/images/1.jpg";
       }

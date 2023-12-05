@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:new_mumlly_app/Screens/my_app_screen/childPopup.dart';
 
 class add_new_child extends StatefulWidget {
   const add_new_child({super.key});
@@ -50,7 +51,7 @@ class _add_new_childState extends State<add_new_child> {
             Row(
               children: [
                 Container(
-                  height: 240,
+                  height: 220,
                   width: 350,
                   margin: EdgeInsets.fromLTRB(20, 30, 0, 0),
         
@@ -86,7 +87,7 @@ class _add_new_childState extends State<add_new_child> {
                           child: Icon(Icons.person_outline),
                         ),
                       ),
-                      SizedBox(height: 25,),
+                      SizedBox(height: 15,),
                       Container(
                         margin: EdgeInsets.only(left: 25),
                         child: Text(
@@ -128,9 +129,9 @@ class _add_new_childState extends State<add_new_child> {
             ),
             SizedBox(height: 15,),
             Container(
-              height: 330,
+              height: 315,
               width: 350,
-              margin: EdgeInsets.fromLTRB(15, 20, 0, 0),
+              margin: EdgeInsets.fromLTRB(10, 10, 0, 0),
         
               decoration: BoxDecoration(
                 color: Colors.white,
@@ -252,7 +253,7 @@ class _add_new_childState extends State<add_new_child> {
 
                   ),
 
-                  SizedBox(height: 15),
+                  SizedBox(height: 10),
 
                   Container(
                     margin: EdgeInsets.only(left: 25),
@@ -307,6 +308,24 @@ class _add_new_childState extends State<add_new_child> {
               ),
         
             ),
+            SizedBox(height: 30,),
+            SizedBox(
+                height: 40,
+                width: 320,
+                child: ElevatedButton(
+                  onPressed: ()  {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => child_popup()),
+                    );
+                  },
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.deepPurple,
+                  ),
+                  child: Text('Add Child' ,
+                    style: TextStyle(color: Colors.white),
+                  ),
+                ))
         
         
           ],

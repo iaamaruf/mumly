@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:new_mumlly_app/Common/bottom_navigation_bar.dart';
+import 'package:new_mumlly_app/Screens/Student/student_home_screen.dart';
 
 class child_popup extends StatefulWidget {
   const child_popup({super.key});
@@ -41,7 +43,7 @@ class _child_popupState extends State<child_popup> {
 
         children: [
           Container(
-            height: 450,
+            height: 470,
             width: MediaQuery.of(context).size.width,
 
             child: Column(
@@ -89,12 +91,12 @@ class _child_popupState extends State<child_popup> {
                 ),
 
                 Container(
-                 height: 200,
-                  width: 200,
+                 height: 250,
+                  width: 220,
                   child: Text(
-                    'The context argument passed to the '
-                        'of method should be'
-                        ' the BuildContext of a widget in the widget tree',
+                    'We have sent your request to your '
+                        'child’s school, the child managementdashboard'
+                        ' will be availableonce they confirm',
                     style: TextStyle(
                       color: Colors.grey,
                       fontSize: 14,
@@ -110,14 +112,20 @@ class _child_popupState extends State<child_popup> {
 
           SizedBox(height: 60,),
           SizedBox(
-              height: 45,
-              width: 290,
+              height: 40,
+              width: 320,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: ()  {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => BottomNavigationScreen()),
+                  );
+                },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.deepPurple,
                 ),
-                child: Text('OK' , style: TextStyle(color: Colors.white),
+                child: Text('ok' ,
+                  style: TextStyle(color: Colors.white),
                 ),
               ))
         ],

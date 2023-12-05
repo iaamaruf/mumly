@@ -6,6 +6,7 @@ import 'package:new_mumlly_app/Screens/Student/attendance_screen.dart';
 import 'package:new_mumlly_app/Screens/Student/student_home_screen.dart';
 import 'package:new_mumlly_app/Screens/my_app_screen/child_managment.dart';
 import 'package:new_mumlly_app/Utilities/colors.dart';
+import 'package:new_mumlly_app/Utilities/images.dart';
 
 
 class BottomNavigationScreen extends StatefulWidget {
@@ -22,7 +23,7 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
   final List<Widget>screens = [
     const StudentHomeScreen(),
     const AttendanceScreen(),
-    const ProfileScreen(),
+    const HomeScrean(),
   ];
   final PageStorageBucket bucket = PageStorageBucket();
   Widget currentScreen = const StudentHomeScreen();
@@ -66,18 +67,14 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Icon(
-                      Icons.home,
-                      color: currentTab == 0 ? AppColor.fTextColor : AppColor.gray,
+                    Container(
+                        height: 20,
+                        width: 20,
+                        child: Image.asset(
+                          AppImage.getPath("home_icon"),
+                          fit: BoxFit.fill,)
                     ),
-                    Text(
-                      "Homne",
-                      style: TextStyle(
-                          color: currentTab == 0 ? AppColor.fTextColor : AppColor.gray,
-                          fontFamily: "Jost",
-                          fontSize: 12
-                      ),
-                    ),
+
                   ],
                 ),
               ),
@@ -92,18 +89,14 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Icon(
-                      Icons.chrome_reader_mode,
-                      color: currentTab == 2 ? AppColor.fTextColor : AppColor.gray,
+                    Container(
+                        height: 20,
+                        width: 20,
+                        child: Image.asset(
+                          AppImage.getPath("attendence_icon"),
+                          fit: BoxFit.fill,)
                     ),
-                    Text(
-                      "Attendance",
-                      style: TextStyle(
-                          color: currentTab == 2 ? AppColor.fTextColor : AppColor.gray,
-                          fontFamily: "Jost",
-                          fontSize: 12
-                      ),
-                    ),
+
                   ],
                 ),
               ),
@@ -116,18 +109,14 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Icon(
-                      Icons.people,
-                      color: currentTab == 3 ? AppColor.fTextColor : AppColor.gray,
+                    Container(
+                        height: 20,
+                        width: 20,
+                        child: Image.asset(
+                          AppImage.getPath("people_icon"),
+                          fit: BoxFit.fill,)
                     ),
-                    Text(
-                      "Profile",
-                      style: TextStyle(
-                          color: currentTab == 3 ? AppColor.fTextColor : AppColor.gray,
-                          fontFamily: "Jost",
-                          fontSize: 12
-                      ),
-                    ),
+
                   ],
                 ),
               ),

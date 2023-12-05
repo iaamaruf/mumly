@@ -162,7 +162,7 @@ class _AttendanceScreenState extends State<AttendanceScreen> {
 
       appBar: AppBar(
 
-        toolbarHeight: 70,
+        toolbarHeight: 60,
         title: const Text(
           '       Choose Date',
         ),
@@ -212,36 +212,43 @@ class _AttendanceScreenState extends State<AttendanceScreen> {
                               borderRadius: BorderRadius.circular(20.0),
                             ),
                             child: Container(
-                              height: 130,
-                              width: 160,
+                              height: 108,
+                              width: 107,
                               decoration: BoxDecoration(
-                                color: Colors.deepPurple,
-                                  borderRadius: BorderRadius.circular(20)
+
+                                shape: BoxShape.rectangle,
+                                borderRadius: BorderRadius.circular(20),
+
+                                gradient: LinearGradient(
+                                    begin: Alignment.topLeft,
+                                    end: Alignment.bottomRight,
+                                    colors: <Color>[
+                                      Colors.blueAccent,
+                                      Colors.grey.shade200.withOpacity(0.9)
+                                    ]),
                               ),
                               child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Padding(
-                                    padding: const EdgeInsets.only(left: 15.0,right: 15.0,top:15.0, bottom: 15),
+                                    padding: const EdgeInsets.all(10),
                                     child: Text(
                                       'Total Present',
                                       style: TextStyle(
-                                          fontSize: 20.0,
+                                          fontSize: 18.0,
                                           color: AppColor.white,
-                                          fontWeight: FontWeight.bold,
-                                          fontFamily: "Jost"
+
                                       ),
                                     ),
                                   ),
-                                  Container(
-                                    margin: EdgeInsets.only(bottom: 20),
-                                    height: 50,
-                                    width: 50,
-                                    alignment: Alignment.center,
-                                    decoration: BoxDecoration(
+                                  Text(
+                                    '  217',
+                                    style: TextStyle(
+                                        fontSize: 22.0,
                                         color: AppColor.white,
-                                        borderRadius: BorderRadius.circular(50)
+                                        fontWeight: FontWeight.bold,
+
                                     ),
-                                    child: Text("19",style: TextStyle(color: AppColor.green,fontSize: 18,fontWeight: FontWeight.w600),),
                                   ),
                                 ],
                               ),
@@ -252,46 +259,485 @@ class _AttendanceScreenState extends State<AttendanceScreen> {
                               borderRadius: BorderRadius.circular(20.0),
                             ),
                             child: Container(
-                              height: 130,
-                              width: 160,
+                              height: 108,
+                              width: 107,
                               decoration: BoxDecoration(
-                                  color: Colors.redAccent,
-                                  borderRadius: BorderRadius.circular(20)
+
+                                shape: BoxShape.rectangle,
+                                borderRadius: BorderRadius.circular(20),
+
+                                  gradient: AppGradient.getColorGradient('box1')
                               ),
                               child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Padding(
-                                    padding: const EdgeInsets.only(left: 15.0,right: 15.0,top:15.0, bottom: 15),
+                                    padding: const EdgeInsets.all(10),
                                     child: Text(
-                                      'Total Absent',
+                                      'Total Break',
                                       style: TextStyle(
-                                          fontSize: 20.0,
-                                          color: AppColor.white,
-                                          fontWeight: FontWeight.bold,
-                                          fontFamily: "Jost"
+                                        fontSize: 18.0,
+                                        color: AppColor.white,
+
                                       ),
                                     ),
                                   ),
-                                  Container(
-                                    margin: EdgeInsets.only(bottom: 20),
-                                    height: 50,
-                                    width: 50,
-                                    alignment: Alignment.center,
-                                    decoration: BoxDecoration(
-                                        color: AppColor.white,
-                                        borderRadius: BorderRadius.circular(50)
+                                  Text(
+                                    '  10',
+                                    style: TextStyle(
+                                      fontSize: 22.0,
+                                      color: AppColor.white,
+                                      fontWeight: FontWeight.bold,
+
                                     ),
-                                    child: Text("11",style: TextStyle(color: Colors.pinkAccent,fontSize: 18,fontWeight: FontWeight.w600),),
                                   ),
                                 ],
                               ),
                             ),
-                          )
+                          ),
+                          Card(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20.0),
+                            ),
+                            child: Container(
+                              height: 108,
+                              width: 107,
+                              decoration: BoxDecoration(
+
+                                shape: BoxShape.rectangle,
+                                borderRadius: BorderRadius.circular(20),
+
+                                gradient: LinearGradient(
+                                    begin: Alignment.topLeft,
+                                    end: Alignment.bottomRight,
+                                    colors: <Color>[
+                                      Colors.red,
+                                      Colors.red,
+                                      Colors.grey.shade200.withOpacity(0.9)
+                                    ]),
+                              ),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.all(10),
+                                    child: Text(
+                                      'Total Absent',
+                                      style: TextStyle(
+                                        fontSize: 18.0,
+                                        color: AppColor.white,
+
+                                      ),
+                                    ),
+                                  ),
+                                  Text(
+                                    '  7',
+                                    style: TextStyle(
+                                      fontSize: 22.0,
+                                      color: AppColor.white,
+                                      fontWeight: FontWeight.bold,
+
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
                         ],
                       ),
+
+
+                      Container(
+                        height: 24,
+                        width: 352,
+                        decoration: BoxDecoration(
+
+                          shape: BoxShape.rectangle,
+                          borderRadius: BorderRadius.circular(15),
+                          color: Colors.grey.shade200,
+
+                        ),
+                        child: Row(
+                          children: [
+                            Container(
+
+                              height: 20,
+                              width: 20,
+                              color: Colors.blue,
+
+                            ),
+                            SizedBox(width: 20,),
+                            Text('Days that are marked blue represent present')
+                          ],
+                        ),
+                      ),
+
+                      // SizedBox(
+                      //   height: SizeConfig.screenHeight * 0.71,
+                      //   child: Column(
+                      //     children: [
+                      //       Container(
+                      //         margin: const EdgeInsets.only(left: 16.0, right: 16),
+                      //         // decoration: BoxDecoration(
+                      //         //   color:Colors.grey
+                      //         // ),
+                      //         child: _calendarCarouselNoHeader,
+                      //       ),
+                      //       Row(
+                      //         crossAxisAlignment: CrossAxisAlignment.center,
+                      //         mainAxisAlignment: MainAxisAlignment.center,
+                      //         children: [
+                      //           Card(
+                      //             shape: RoundedRectangleBorder(
+                      //               borderRadius: BorderRadius.circular(20.0),
+                      //             ),
+                      //             child: Container(
+                      //               height: 114,
+                      //               width: 107,
+                      //               decoration: BoxDecoration(
+                      //
+                      //                 shape: BoxShape.rectangle,
+                      //                 borderRadius: BorderRadius.circular(20),
+                      //
+                      //                 gradient: LinearGradient(
+                      //                     begin: Alignment.topLeft,
+                      //                     end: Alignment.bottomRight,
+                      //                     colors: <Color>[
+                      //                       Colors.blueAccent,
+                      //                       Colors.grey.shade200.withOpacity(0.9)
+                      //                     ]),
+                      //               ),
+                      //               child: Column(
+                      //                 crossAxisAlignment: CrossAxisAlignment.start,
+                      //                 children: [
+                      //                   Padding(
+                      //                     padding: const EdgeInsets.all(10),
+                      //                     child: Text(
+                      //                       'Total Present',
+                      //                       style: TextStyle(
+                      //                         fontSize: 18.0,
+                      //                         color: AppColor.white,
+                      //
+                      //                       ),
+                      //                     ),
+                      //                   ),
+                      //                   Text(
+                      //                     '  217',
+                      //                     style: TextStyle(
+                      //                       fontSize: 22.0,
+                      //                       color: AppColor.white,
+                      //                       fontWeight: FontWeight.bold,
+                      //
+                      //                     ),
+                      //                   ),
+                      //                 ],
+                      //               ),
+                      //             ),
+                      //           ),
+                      //           Card(
+                      //             shape: RoundedRectangleBorder(
+                      //               borderRadius: BorderRadius.circular(20.0),
+                      //             ),
+                      //             child: Container(
+                      //               height: 114,
+                      //               width: 107,
+                      //               decoration: BoxDecoration(
+                      //
+                      //                   shape: BoxShape.rectangle,
+                      //                   borderRadius: BorderRadius.circular(20),
+                      //
+                      //                   gradient: AppGradient.getColorGradient('box1')
+                      //               ),
+                      //               child: Column(
+                      //                 crossAxisAlignment: CrossAxisAlignment.start,
+                      //                 children: [
+                      //                   Padding(
+                      //                     padding: const EdgeInsets.all(10),
+                      //                     child: Text(
+                      //                       'Total Break',
+                      //                       style: TextStyle(
+                      //                         fontSize: 18.0,
+                      //                         color: AppColor.white,
+                      //
+                      //                       ),
+                      //                     ),
+                      //                   ),
+                      //                   Text(
+                      //                     '  10',
+                      //                     style: TextStyle(
+                      //                       fontSize: 22.0,
+                      //                       color: AppColor.white,
+                      //                       fontWeight: FontWeight.bold,
+                      //
+                      //                     ),
+                      //                   ),
+                      //                 ],
+                      //               ),
+                      //             ),
+                      //           ),
+                      //           Card(
+                      //             shape: RoundedRectangleBorder(
+                      //               borderRadius: BorderRadius.circular(20.0),
+                      //             ),
+                      //             child: Container(
+                      //               height: 114,
+                      //               width: 107,
+                      //               decoration: BoxDecoration(
+                      //
+                      //                 shape: BoxShape.rectangle,
+                      //                 borderRadius: BorderRadius.circular(20),
+                      //
+                      //                 gradient: LinearGradient(
+                      //                     begin: Alignment.topLeft,
+                      //                     end: Alignment.bottomRight,
+                      //                     colors: <Color>[
+                      //                       Colors.red,
+                      //                       Colors.red,
+                      //                       Colors.grey.shade200.withOpacity(0.9)
+                      //                     ]),
+                      //               ),
+                      //               child: Column(
+                      //                 crossAxisAlignment: CrossAxisAlignment.start,
+                      //                 children: [
+                      //                   Padding(
+                      //                     padding: const EdgeInsets.all(10),
+                      //                     child: Text(
+                      //                       'Total Absent',
+                      //                       style: TextStyle(
+                      //                         fontSize: 18.0,
+                      //                         color: AppColor.white,
+                      //
+                      //                       ),
+                      //                     ),
+                      //                   ),
+                      //                   Text(
+                      //                     '  7',
+                      //                     style: TextStyle(
+                      //                       fontSize: 22.0,
+                      //                       color: AppColor.white,
+                      //                       fontWeight: FontWeight.bold,
+                      //
+                      //                     ),
+                      //                   ),
+                      //                 ],
+                      //               ),
+                      //             ),
+                      //           ),
+                      //         ],
+                      //       ),
+                      //     ],
+                      //   ),
+                      // ),
+                      // Container(
+                      //   height: 30,
+                      //   width: 352,
+                      //   decoration: BoxDecoration(
+                      //
+                      //     shape: BoxShape.rectangle,
+                      //     borderRadius: BorderRadius.circular(25),
+                      //     color: Colors.grey.shade200,
+                      //
+                      //   ),
+                      //   child: Row(
+                      //     children: [
+                      //       Container(
+                      //         margin: EdgeInsets.only(left: 20),
+                      //         height: 25,
+                      //         width: 25,
+                      //         color: Colors.blue,
+                      //
+                      //       ),
+                      //       SizedBox(width: 20,),
+                      //       Text('Days that are marked blue represent present')
+                      //     ],
+                      //   ),
+                      // ),
+                      //
+                      // SizedBox(
+                      //   height: SizeConfig.screenHeight * 0.71,
+                      //   child: Column(
+                      //     children: [
+                      //       Container(
+                      //         margin: const EdgeInsets.only(left: 16.0, right: 16),
+                      //         // decoration: BoxDecoration(
+                      //         //   color:Colors.grey
+                      //         // ),
+                      //         child: _calendarCarouselNoHeader,
+                      //       ),
+                      //       Row(
+                      //         crossAxisAlignment: CrossAxisAlignment.center,
+                      //         mainAxisAlignment: MainAxisAlignment.center,
+                      //         children: [
+                      //           Card(
+                      //             shape: RoundedRectangleBorder(
+                      //               borderRadius: BorderRadius.circular(20.0),
+                      //             ),
+                      //             child: Container(
+                      //               height: 114,
+                      //               width: 107,
+                      //               decoration: BoxDecoration(
+                      //
+                      //                 shape: BoxShape.rectangle,
+                      //                 borderRadius: BorderRadius.circular(20),
+                      //
+                      //                 gradient: LinearGradient(
+                      //                     begin: Alignment.topLeft,
+                      //                     end: Alignment.bottomRight,
+                      //                     colors: <Color>[
+                      //                       Colors.blueAccent,
+                      //                       Colors.grey.shade200.withOpacity(0.9)
+                      //                     ]),
+                      //               ),
+                      //               child: Column(
+                      //                 crossAxisAlignment: CrossAxisAlignment.start,
+                      //                 children: [
+                      //                   Padding(
+                      //                     padding: const EdgeInsets.all(10),
+                      //                     child: Text(
+                      //                       'Total Present',
+                      //                       style: TextStyle(
+                      //                         fontSize: 18.0,
+                      //                         color: AppColor.white,
+                      //
+                      //                       ),
+                      //                     ),
+                      //                   ),
+                      //                   Text(
+                      //                     '  217',
+                      //                     style: TextStyle(
+                      //                       fontSize: 22.0,
+                      //                       color: AppColor.white,
+                      //                       fontWeight: FontWeight.bold,
+                      //
+                      //                     ),
+                      //                   ),
+                      //                 ],
+                      //               ),
+                      //             ),
+                      //           ),
+                      //           Card(
+                      //             shape: RoundedRectangleBorder(
+                      //               borderRadius: BorderRadius.circular(20.0),
+                      //             ),
+                      //             child: Container(
+                      //               height: 114,
+                      //               width: 107,
+                      //               decoration: BoxDecoration(
+                      //
+                      //                   shape: BoxShape.rectangle,
+                      //                   borderRadius: BorderRadius.circular(20),
+                      //
+                      //                   gradient: AppGradient.getColorGradient('box1')
+                      //               ),
+                      //               child: Column(
+                      //                 crossAxisAlignment: CrossAxisAlignment.start,
+                      //                 children: [
+                      //                   Padding(
+                      //                     padding: const EdgeInsets.all(10),
+                      //                     child: Text(
+                      //                       'Total Break',
+                      //                       style: TextStyle(
+                      //                         fontSize: 18.0,
+                      //                         color: AppColor.white,
+                      //
+                      //                       ),
+                      //                     ),
+                      //                   ),
+                      //                   Text(
+                      //                     '  10',
+                      //                     style: TextStyle(
+                      //                       fontSize: 22.0,
+                      //                       color: AppColor.white,
+                      //                       fontWeight: FontWeight.bold,
+                      //
+                      //                     ),
+                      //                   ),
+                      //                 ],
+                      //               ),
+                      //             ),
+                      //           ),
+                      //           Card(
+                      //             shape: RoundedRectangleBorder(
+                      //               borderRadius: BorderRadius.circular(20.0),
+                      //             ),
+                      //             child: Container(
+                      //               height: 114,
+                      //               width: 107,
+                      //               decoration: BoxDecoration(
+                      //
+                      //                 shape: BoxShape.rectangle,
+                      //                 borderRadius: BorderRadius.circular(20),
+                      //
+                      //                 gradient: LinearGradient(
+                      //                     begin: Alignment.topLeft,
+                      //                     end: Alignment.bottomRight,
+                      //                     colors: <Color>[
+                      //                       Colors.red,
+                      //                       Colors.red,
+                      //                       Colors.grey.shade200.withOpacity(0.9)
+                      //                     ]),
+                      //               ),
+                      //               child: Column(
+                      //                 crossAxisAlignment: CrossAxisAlignment.start,
+                      //                 children: [
+                      //                   Padding(
+                      //                     padding: const EdgeInsets.all(10),
+                      //                     child: Text(
+                      //                       'Total Absent',
+                      //                       style: TextStyle(
+                      //                         fontSize: 18.0,
+                      //                         color: AppColor.white,
+                      //
+                      //                       ),
+                      //                     ),
+                      //                   ),
+                      //                   Text(
+                      //                     '  7',
+                      //                     style: TextStyle(
+                      //                       fontSize: 22.0,
+                      //                       color: AppColor.white,
+                      //                       fontWeight: FontWeight.bold,
+                      //
+                      //                     ),
+                      //                   ),
+                      //                 ],
+                      //               ),
+                      //             ),
+                      //           ),
+                      //         ],
+                      //       ),
+                      //     ],
+                      //   ),
+                      // ),
+                      // Container(
+                      //   height: 30,
+                      //   width: 352,
+                      //   decoration: BoxDecoration(
+                      //
+                      //     shape: BoxShape.rectangle,
+                      //     borderRadius: BorderRadius.circular(25),
+                      //     color: Colors.grey.shade200,
+                      //
+                      //   ),
+                      //   child: Row(
+                      //     children: [
+                      //       Container(
+                      //         margin: EdgeInsets.only(left: 20),
+                      //         height: 25,
+                      //         width: 25,
+                      //         color: Colors.blue,
+                      //
+                      //       ),
+                      //       SizedBox(width: 20,),
+                      //       Text('Days that are marked blue represent present')
+                      //     ],
+                      //   ),
+                      // ),
+
                     ],
                   ),
-                ), //
+                ),
+                //
               ],
             ),
           ),

@@ -6,6 +6,7 @@ import 'package:new_mumlly_app/Screens/my_app_screen/report.dart';
 import 'package:new_mumlly_app/Screens/my_app_screen/special_note.dart';
 import 'package:new_mumlly_app/Screens/my_app_screen/transfer.dart';
 import 'package:new_mumlly_app/Screens/my_app_screen/wow_moments.dart';
+import 'package:new_mumlly_app/Utilities/images.dart';
 
 class HomeScrean extends StatefulWidget {
   const HomeScrean({super.key});
@@ -123,19 +124,19 @@ class _HomeScreanState extends State<HomeScrean> {
                       },
                       child: SizedBox(
                         child: Padding(
-                          padding: const EdgeInsets.all(8.0),
+                          padding: const EdgeInsets.all(10.0),
                           child: Row(
                             children: [
                               Column(
                                 children: [
-                                  SizedBox(
-                                    height: 8,
+
+                                  Container(
+                                      height: 20,
+                                      width: 20,
+                                      child: Image.asset(
+                                        AppImage.getPath("main_clock"),
+                                        fit: BoxFit.fill,)
                                   ),
-                                  Icon(
-                                    Icons.timelapse,
-                                    color: Colors.yellow.shade700,
-                                    size: 35,
-                                  )
                                 ],
                               ),
                               SizedBox(
@@ -183,14 +184,13 @@ class _HomeScreanState extends State<HomeScrean> {
                             children: [
                               Column(
                                 children: [
-                                  SizedBox(
-                                    height: 8,
+                                  Container(
+                                      height: 20,
+                                      width: 20,
+                                      child: Image.asset(
+                                        AppImage.getPath("main_clock"),
+                                        fit: BoxFit.fill,)
                                   ),
-                                  Icon(
-                                    Icons.timelapse,
-                                    color: Colors.yellow.shade700,
-                                    size: 35,
-                                  )
                                 ],
                               ),
                               SizedBox(
@@ -241,14 +241,13 @@ class _HomeScreanState extends State<HomeScrean> {
                             children: [
                               Column(
                                 children: [
-                                  SizedBox(
-                                    height: 8,
+                                  Container(
+                                      height: 20,
+                                      width: 20,
+                                      child: Image.asset(
+                                        AppImage.getPath("main_clock"),
+                                        fit: BoxFit.fill,)
                                   ),
-                                  Icon(
-                                    Icons.timelapse,
-                                    color: Colors.yellow.shade700,
-                                    size: 35,
-                                  )
                                 ],
                               ),
                               SizedBox(
@@ -299,14 +298,13 @@ class _HomeScreanState extends State<HomeScrean> {
                             children: [
                               Column(
                                 children: [
-                                  SizedBox(
-                                    height: 8,
+                                  Container(
+                                      height: 20,
+                                      width: 20,
+                                      child: Image.asset(
+                                        AppImage.getPath("main_clock"),
+                                        fit: BoxFit.fill,)
                                   ),
-                                  Icon(
-                                    Icons.timelapse,
-                                    color: Colors.yellow.shade700,
-                                    size: 35,
-                                  )
                                 ],
                               ),
                               SizedBox(
@@ -357,14 +355,13 @@ class _HomeScreanState extends State<HomeScrean> {
                             children: [
                               Column(
                                 children: [
-                                  SizedBox(
-                                    height: 8,
+                                  Container(
+                                      height: 20,
+                                      width: 20,
+                                      child: Image.asset(
+                                        AppImage.getPath("main_clock"),
+                                        fit: BoxFit.fill,)
                                   ),
-                                  Icon(
-                                    Icons.timelapse,
-                                    color: Colors.yellow.shade700,
-                                    size: 35,
-                                  )
                                 ],
                               ),
                               SizedBox(
@@ -415,14 +412,13 @@ class _HomeScreanState extends State<HomeScrean> {
                             children: [
                               Column(
                                 children: [
-                                  SizedBox(
-                                    height: 8,
+                                  Container(
+                                      height: 20,
+                                      width: 20,
+                                      child: Image.asset(
+                                        AppImage.getPath("main_clock"),
+                                        fit: BoxFit.fill,)
                                   ),
-                                  Icon(
-                                    Icons.timelapse,
-                                    color: Colors.yellow.shade700,
-                                    size: 35,
-                                  )
                                 ],
                               ),
                               SizedBox(
@@ -473,14 +469,13 @@ class _HomeScreanState extends State<HomeScrean> {
                             children: [
                               Column(
                                 children: [
-                                  SizedBox(
-                                    height: 8,
+                                  Container(
+                                      height: 20,
+                                      width: 20,
+                                      child: Image.asset(
+                                        AppImage.getPath("main_clock"),
+                                        fit: BoxFit.fill,)
                                   ),
-                                  Icon(
-                                    Icons.timelapse,
-                                    color: Colors.yellow.shade700,
-                                    size: 35,
-                                  )
                                 ],
                               ),
                               SizedBox(
