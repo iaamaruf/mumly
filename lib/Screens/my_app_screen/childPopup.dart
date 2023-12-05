@@ -15,7 +15,7 @@ class _child_popupState extends State<child_popup> {
     return Scaffold(
       appBar: AppBar(
 
-        toolbarHeight: 130,
+        toolbarHeight: 120,
 
 
         flexibleSpace: Container(
@@ -42,6 +42,7 @@ class _child_popupState extends State<child_popup> {
       body: Column(
 
         children: [
+          SizedBox(height: 10,),
           Container(
             height: 470,
             width: MediaQuery.of(context).size.width,
@@ -82,7 +83,8 @@ class _child_popupState extends State<child_popup> {
                     'Child Added Succesfully',
                     style: TextStyle(
                       color: Colors.black,
-                      fontSize: 25,
+                      fontSize: 28,
+                        fontWeight: FontWeight.w500
                     ),
                   ),
                 ),
@@ -92,7 +94,7 @@ class _child_popupState extends State<child_popup> {
 
                 Container(
                  height: 250,
-                  width: 220,
+                  width: 240,
                   child: Text(
                     'We have sent your request to your '
                         'child’s school, the child managementdashboard'

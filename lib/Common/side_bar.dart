@@ -80,11 +80,13 @@ class _NavDrawerState extends State<NavDrawer> {
             ListTile(
               title:  const Text(
                 'Billing',
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                style: TextStyle(fontWeight: FontWeight.bold,
+                    color: Colors.black54,
+                    fontSize: 16),
               ),
               leading: Icon(
                 Icons.home_sharp,
-                color: AppColor.black,
+                color: Colors.black54,
               ),
               onTap: () => Navigator.push(
                 context,
@@ -94,11 +96,13 @@ class _NavDrawerState extends State<NavDrawer> {
             ListTile(
               title: const Text(
                 'Promotions',
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                style: TextStyle(fontWeight: FontWeight.bold,
+                    color: Colors.black54,
+                    fontSize: 16),
               ),
               leading: Icon(
                 Icons.note_outlined,
-                color: AppColor.black,
+                color: Colors.black54,
               ),
               onTap: () {
                 Utility.pop();
@@ -107,11 +111,13 @@ class _NavDrawerState extends State<NavDrawer> {
             ListTile(
               title: const Text(
                 'Support',
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                style: TextStyle(fontWeight: FontWeight.bold,
+                    color: Colors.black54,
+                    fontSize: 16),
               ),
               leading: Icon(
                 Icons.broken_image_outlined,
-                color: AppColor.black,
+                color:Colors.black54,
               ),
               onTap: () {
                 Utility.pop();
@@ -120,25 +126,30 @@ class _NavDrawerState extends State<NavDrawer> {
             ListTile(
               title: const Text(
                 'About',
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                style: TextStyle(fontWeight: FontWeight.bold,
+                    color: Colors.black54,
+                    fontSize: 16),
               ),
               leading: Icon(
                 Icons.settings,
-                color: AppColor.black,
+                color: Colors.black54,
               ),
               onTap: () {
                 Utility.pop();
               },
             ),
+            SizedBox(height: 240,),
 
             ListTile(
               title: const Text(
                 'Sign Out',
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                style: TextStyle(fontWeight: FontWeight.bold,
+                    color: Colors.black54,
+                    fontSize: 16),
               ),
               leading: Icon(
                 Icons.logout,
-                color: AppColor.black,
+                color: Colors.black54,
               ),
               onTap: () {
                 Utility.pop();

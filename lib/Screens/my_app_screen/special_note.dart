@@ -15,9 +15,11 @@ class _Special_notesState extends State<Special_notes> {
     return Scaffold(
       appBar: AppBar(
 
-        toolbarHeight: 130,
+        toolbarHeight: 120,
         title: const Text(
           'Leave a Special Notes',
+          style: TextStyle(fontSize: 20,
+          fontWeight: FontWeight.w500),
         ),
 
         flexibleSpace: Container(

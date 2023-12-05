@@ -48,13 +48,13 @@ class _StudentHomeScreenState extends State<StudentHomeScreen> {
                               _globalKey.currentState?.openDrawer();
                             },
                             icon: Icon(
-                              Icons.menu,
-                              color: AppColor.defaultColorLight,
+                              Icons.menu_rounded,
+                              color: Colors.grey,
                             ),
                           ),
                           const SizedBox(width: 30,),
                           SizedBox(
-                            width: 260,
+                            width: 250,
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -76,9 +76,9 @@ class _StudentHomeScreenState extends State<StudentHomeScreen> {
                                       child: Text(
                                         "Zainab Bashir",
                                         style: TextStyle(
-                                            fontSize: 15.0,
+                                            fontSize: 20,
                                             color: AppColor.fTextColor,
-                                          fontWeight: FontWeight.w400,
+
                                         ),
                                         //getCommonProvider.getDriverDetails()!.data!.phoneCode! + getCommonProvider.getDriverDetails()!.data!.phoneNumber!
                                       ),
@@ -119,7 +119,7 @@ class _StudentHomeScreenState extends State<StudentHomeScreen> {
                             child: const Text(
                               "Manage your kids",
                               style: TextStyle(
-                                fontSize: 18,
+                                fontSize: 20,
                                 fontWeight: FontWeight.w500,
                               ),
                             ),
@@ -139,7 +139,7 @@ class _StudentHomeScreenState extends State<StudentHomeScreen> {
                               child: Text(
                                 "View all",
                                 style: TextStyle(
-                                  fontSize: 14,
+                                  fontSize: 18,
                                   color: AppColor.fTextColor,
                                 ),
                               ),
@@ -192,14 +192,15 @@ class _StudentHomeScreenState extends State<StudentHomeScreen> {
                                       SizedBox(width: 10,),
                                       Text(
                                         '  Tom',
-                                        style: TextStyle(fontSize: 18,
-                                            fontWeight: FontWeight.bold,
+                                        style: TextStyle(fontSize:20,
+                                            fontWeight: FontWeight.w500,
                                             color: Colors.black),
                                       ),
                                       Text(
                                         '  School Name',
                                         style: TextStyle(
                                             fontSize: 15,
+                                            fontWeight: FontWeight.w500,
 
                                             color: Colors.blue),
                                       ),
@@ -247,14 +248,15 @@ class _StudentHomeScreenState extends State<StudentHomeScreen> {
                                       SizedBox(width: 10,),
                                       Text(
                                         '  Tom',
-                                        style: TextStyle(fontSize: 18,
-                                            fontWeight: FontWeight.bold,
+                                        style: TextStyle(fontSize:20,
+                                            fontWeight: FontWeight.w500,
                                             color: Colors.black),
                                       ),
                                       Text(
                                         '  School Name',
                                         style: TextStyle(
                                             fontSize: 15,
+                                            fontWeight: FontWeight.w500,
 
                                             color: Colors.blue),
                                       ),
@@ -337,7 +339,7 @@ class _StudentHomeScreenState extends State<StudentHomeScreen> {
                             child: const Text(
                               "After school activities",
                               style: TextStyle(
-                                fontSize: 18,
+                                fontSize: 20,
                                 fontWeight: FontWeight.w500,
                               ),
                             ),
@@ -351,7 +353,7 @@ class _StudentHomeScreenState extends State<StudentHomeScreen> {
                             child: Text(
                               "View all",
                               style: TextStyle(
-                                fontSize: 14,
+                                fontSize: 18,
                                 color: AppColor.fTextColor,
                               ),
                             ),
@@ -384,10 +386,10 @@ class _StudentHomeScreenState extends State<StudentHomeScreen> {
                                   child: Text(
                                     "Coding Bootcamp for Kids",
                                     style: TextStyle(
-                                        fontFamily: "Jost",
+
                                         fontSize: 16,
                                         color: AppColor.black,
-                                        fontWeight: FontWeight.w300
+                                        fontWeight: FontWeight.w500
                                     ),
                                   ),
                                 ),
@@ -395,7 +397,7 @@ class _StudentHomeScreenState extends State<StudentHomeScreen> {
                                 Text(
                                   "By Organizer",
                                   style: TextStyle(
-                                      fontFamily: "Jost",
+
                                       fontSize: 12,
                                       color: AppColor.deepGray,
                                       fontWeight: FontWeight.w200
@@ -405,8 +407,8 @@ class _StudentHomeScreenState extends State<StudentHomeScreen> {
                                 Text(
                                   "24 March 2021, / 11:00PM",
                                   style: TextStyle(
-                                      fontFamily: "Jost",
-                                      fontSize: 12,
+
+                                      fontSize: 14,
                                       color: AppColor.black,
                                   ),
                                 ),
@@ -441,10 +443,10 @@ class _StudentHomeScreenState extends State<StudentHomeScreen> {
                                   child: Text(
                                     "Coding Bootcamp for Kids",
                                     style: TextStyle(
-                                        fontFamily: "Jost",
+
                                         fontSize: 16,
                                         color: AppColor.black,
-                                        fontWeight: FontWeight.w300
+                                        fontWeight: FontWeight.w500
                                     ),
                                   ),
                                 ),
@@ -452,18 +454,17 @@ class _StudentHomeScreenState extends State<StudentHomeScreen> {
                                 Text(
                                   "By Organizer",
                                   style: TextStyle(
-                                      fontFamily: "Jost",
+
                                       fontSize: 12,
                                       color: AppColor.deepGray,
-                                      fontWeight: FontWeight.w200
+
                                   ),
                                 ),
                                 SizedBox(height: 10,),
                                 Text(
                                   "24 March 2021, / 11:00PM",
                                   style: TextStyle(
-                                    fontFamily: "Jost",
-                                    fontSize: 12,
+                                    fontSize: 14,
                                     color: AppColor.black,
                                   ),
                                 ),
@@ -498,10 +499,10 @@ class _StudentHomeScreenState extends State<StudentHomeScreen> {
                                   child: Text(
                                     "Coding Bootcamp for Kids",
                                     style: TextStyle(
-                                        fontFamily: "Jost",
+
                                         fontSize: 16,
                                         color: AppColor.black,
-                                        fontWeight: FontWeight.w300
+                                        fontWeight: FontWeight.w500
                                     ),
                                   ),
                                 ),
@@ -509,18 +510,16 @@ class _StudentHomeScreenState extends State<StudentHomeScreen> {
                                 Text(
                                   "By Organizer",
                                   style: TextStyle(
-                                      fontFamily: "Jost",
+
                                       fontSize: 12,
                                       color: AppColor.deepGray,
-                                      fontWeight: FontWeight.w200
                                   ),
                                 ),
                                 SizedBox(height: 10,),
                                 Text(
                                   "24 March 2021, / 11:00PM",
                                   style: TextStyle(
-                                    fontFamily: "Jost",
-                                    fontSize: 12,
+                                    fontSize: 14,
                                     color: AppColor.black,
                                   ),
                                 ),

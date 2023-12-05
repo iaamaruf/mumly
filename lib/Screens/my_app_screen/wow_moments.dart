@@ -15,7 +15,9 @@ class _wow_momentsState extends State<wow_moments> {
 
         toolbarHeight: 80,
         title: const Text(
-          '       Choose Date',
+          '        Choose Date',
+          style: TextStyle(fontSize: 20,
+              fontWeight: FontWeight.w500),
         ),
 
         flexibleSpace: Container(

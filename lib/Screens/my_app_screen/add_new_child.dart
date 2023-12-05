@@ -23,6 +23,8 @@ class _add_new_childState extends State<add_new_child> {
         toolbarHeight: 80,
         title: const Text(
           '     Add New Child',
+          style: TextStyle(fontSize: 20,
+              fontWeight: FontWeight.w500),
         ),
 
 
@@ -94,7 +96,7 @@ class _add_new_childState extends State<add_new_child> {
                           'Name',
                           style: TextStyle(
                             color: Colors.black,
-                            fontSize: 18,
+                            fontSize: 14,
                           ),
                         ),
         
@@ -150,14 +152,14 @@ class _add_new_childState extends State<add_new_child> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
 
-                  SizedBox(height: 25,),
+                  SizedBox(height: 20,),
                   Container(
                     margin: EdgeInsets.only(left: 25),
                     child: Text(
                       'Date of Birth',
                       style: TextStyle(
                         color: Colors.black,
-                        fontSize: 18,
+                        fontSize: 14,
                       ),
                     ),
         
@@ -209,7 +211,7 @@ class _add_new_childState extends State<add_new_child> {
                       'Choose School',
                       style: TextStyle(
                         color: Colors.black,
-                        fontSize: 18,
+                        fontSize: 14,
                       ),
                     ),
 

@@ -33,7 +33,7 @@ class _HomeScreanState extends State<HomeScrean> {
                       'School Name',
                       style: TextStyle(
                         color: Colors.black,
-                        fontSize: 18,
+                        fontSize: 14,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -69,8 +69,9 @@ class _HomeScreanState extends State<HomeScrean> {
                     child: Text(
                       'Name',
                       style: TextStyle(
-                        color: Colors.blue,
-                        fontSize: 18,
+                        color: Colors.grey,
+                        fontSize: 14,
+                          fontWeight: FontWeight.w500
                       ),
                     ),
                   ),
@@ -81,8 +82,8 @@ class _HomeScreanState extends State<HomeScrean> {
                           'Edit Profile ',
                           style: TextStyle(
                             color: Colors.blue,
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold,
+                            fontSize: 14,
+                              fontWeight: FontWeight.w500
                           ),
                         )),
                     onTap: () {
@@ -96,7 +97,7 @@ class _HomeScreanState extends State<HomeScrean> {
                       'Profile, post, performence etc ',
                       style: TextStyle(
                         color: Colors.blue,
-                        fontSize: 13,
+                        fontSize: 10,
                       ),
                     ),
                   ),
@@ -153,22 +154,28 @@ class _HomeScreanState extends State<HomeScrean> {
                                     ' activities child',
                                     style: TextStyle(
                                       color: Colors.black,
-                                      fontSize: 20,
+                                      fontWeight: FontWeight.w500,
+                                      fontSize: 16,
                                     ),
+                                  ),
+                                  SizedBox(
+                                    height: 10,
                                   ),
                                   Text(
                                     ' attendence, lesion plan, picture etc',
                                     style: TextStyle(
                                       color: Colors.black,
-                                      fontSize: 14,
+                                      fontSize: 12,
                                     ),
                                   ),
+                                  SizedBox(height: 10,)
                                 ],
                               ),
                             ],
                           ),
                         ),
                       ),
+
                     ),
                   ),
                   Card(
@@ -207,16 +214,21 @@ class _HomeScreanState extends State<HomeScrean> {
                                     '  Diary',
                                     style: TextStyle(
                                       color: Colors.black,
-                                      fontSize: 20,
+                                      fontWeight: FontWeight.w500,
+                                      fontSize: 16,
                                     ),
+                                  ),
+                                  SizedBox(
+                                    height: 10,
                                   ),
                                   Text(
                                     ' View Todays Diary',
                                     style: TextStyle(
                                       color: Colors.black,
-                                      fontSize: 14,
+                                      fontSize: 12,
                                     ),
                                   ),
+                                  SizedBox(height: 10,)
                                 ],
                               ),
                             ],
@@ -264,16 +276,21 @@ class _HomeScreanState extends State<HomeScrean> {
                                     ' Special Notes',
                                     style: TextStyle(
                                       color: Colors.black,
-                                      fontSize: 20,
+                                      fontWeight: FontWeight.w500,
+                                      fontSize: 16,
                                     ),
+                                  ),
+                                  SizedBox(
+                                    height: 10,
                                   ),
                                   Text(
                                     ' leave a custom notes for etc',
                                     style: TextStyle(
                                       color: Colors.black,
-                                      fontSize: 14,
+                                      fontSize: 12,
                                     ),
                                   ),
+                                  SizedBox(height: 10,)
                                 ],
                               ),
                             ],
@@ -321,16 +338,21 @@ class _HomeScreanState extends State<HomeScrean> {
                                     'Transfer Child',
                                     style: TextStyle(
                                       color: Colors.black,
-                                      fontSize: 20,
+                                      fontWeight: FontWeight.w500,
+                                      fontSize: 16,
                                     ),
+                                  ),
+                                  SizedBox(
+                                    height: 10,
                                   ),
                                   Text(
                                     ' Transfer child to another school',
                                     style: TextStyle(
                                       color: Colors.black,
-                                      fontSize: 14,
+                                      fontSize: 12,
                                     ),
                                   ),
+                                  SizedBox(height: 10,)
                                 ],
                               ),
                             ],
@@ -356,8 +378,8 @@ class _HomeScreanState extends State<HomeScrean> {
                               Column(
                                 children: [
                                   Container(
-                                      height: 20,
-                                      width: 20,
+                                      height: 16,
+                                      width: 12,
                                       child: Image.asset(
                                         AppImage.getPath("main_clock"),
                                         fit: BoxFit.fill,)
@@ -378,16 +400,22 @@ class _HomeScreanState extends State<HomeScrean> {
                                     'Reports',
                                     style: TextStyle(
                                       color: Colors.black,
-                                      fontSize: 20,
+                                      fontWeight: FontWeight.w500,
+                                      fontSize: 16,
                                     ),
+                                  ),
+                                  SizedBox(
+                                    height: 10,
                                   ),
                                   Text(
                                     ' view each days reports,notes pictures',
                                     style: TextStyle(
                                       color: Colors.black,
-                                      fontSize: 14,
+                                      fontSize: 12,
                                     ),
+
                                   ),
+                                  SizedBox(height: 10,)
                                 ],
                               ),
                             ],
@@ -435,16 +463,22 @@ class _HomeScreanState extends State<HomeScrean> {
                                     'Lession plan',
                                     style: TextStyle(
                                       color: Colors.black,
-                                      fontSize: 20,
+                                      fontWeight: FontWeight.w500,
+                                      fontSize: 16,
                                     ),
+                                  ),
+                                  SizedBox(
+                                    height: 10,
                                   ),
                                   Text(
                                     'View all lession plan',
                                     style: TextStyle(
                                       color: Colors.black,
-                                      fontSize: 14,
+                                      fontSize: 12,
                                     ),
+
                                   ),
+                                  SizedBox(height: 10,)
                                 ],
                               ),
                             ],
@@ -492,16 +526,21 @@ class _HomeScreanState extends State<HomeScrean> {
                                     'Wow moment',
                                     style: TextStyle(
                                       color: Colors.black,
-                                      fontSize: 20,
+                                      fontWeight: FontWeight.w500,
+                                      fontSize: 16,
                                     ),
+                                  ),
+                                  SizedBox(
+                                    height: 10,
                                   ),
                                   Text(
                                     'View your childs best momment ',
                                     style: TextStyle(
                                       color: Colors.black,
-                                      fontSize: 14,
+                                      fontSize: 12,
                                     ),
                                   ),
+                                  SizedBox(height: 10,)
                                 ],
                               ),
                             ],

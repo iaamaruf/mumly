@@ -43,7 +43,7 @@ class _secondState extends State<second> {
               '12 June 2024',
               style: TextStyle(
                 color: Colors.black,
-                fontSize: 25,
+                fontSize: 20,
                 fontWeight: FontWeight.bold,
               ),
             ),
@@ -94,24 +94,26 @@ class _secondState extends State<second> {
                                   ' Lession Name',
                                   style: TextStyle(
                                     color: Colors.black,
-                                    fontSize: 20,
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w500,
                                   ),
                                 ),
                                 Text(
                                   ' 1.5 hourse',
                                   style: TextStyle(
-                                    color: Colors.black,
-                                    fontSize: 14,
+                                    color: Colors.grey,
+                                    fontSize: 10,
                                   ),
                                 ),
 
                                 Text(
                                   ' Teacher Name',
                                   style: TextStyle(
-                                    color: Colors.black,
-                                    fontSize: 14,
+                                    color: Colors.grey,
+                                    fontSize: 10,
                                   ),
                                 ),
+                                SizedBox(height: 10,)
                               ],
                             ),
                           ],
