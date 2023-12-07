@@ -30,6 +30,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  barcode: ^2.0.0
+  syncfusion_flutter_barcodes: ^23.2.6
 
 
   # The following adds the Cupertino Icons font to your application.

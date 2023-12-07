@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:new_mumlly_app/Screens/my_app_screen/barcode.dart';
 
 class event_details extends StatefulWidget {
   const event_details({super.key});
@@ -256,7 +257,12 @@ class _event_detailsState extends State<event_details> {
                   height: 40,
                   width: 330,
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: ()  {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => ticket()),
+                      );
+                    },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.deepPurple,
                     ),
