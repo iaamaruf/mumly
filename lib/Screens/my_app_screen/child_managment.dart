@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:new_mumlly_app/Screens/my_app_screen/allEventPage.dart';
 import 'package:new_mumlly_app/Screens/my_app_screen/lession_plan.dart';
+import 'package:new_mumlly_app/Screens/my_app_screen/profile_events.dart';
 import 'package:new_mumlly_app/Screens/my_app_screen/report.dart';
 import 'package:new_mumlly_app/Screens/my_app_screen/special_note.dart';
 import 'package:new_mumlly_app/Screens/my_app_screen/transfer.dart';
@@ -35,6 +36,7 @@ class _HomeScreanState extends State<HomeScrean> {
                         color: Colors.black,
                         fontSize: 14,
                         fontWeight: FontWeight.bold,
+                        fontFamily: "Lato",
                       ),
                     ),
                   ),
@@ -46,19 +48,16 @@ class _HomeScreanState extends State<HomeScrean> {
 
                     // padding: const EdgeInsets.all(8.0),
                     child: Container(
-                      height: 80,
-                      width: 80,
-                      padding: EdgeInsets.all(2),
+                      height: 100,
+                      width: 100,
+
                       decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                            begin: Alignment.centerLeft,
-                            end: Alignment.centerRight,
-                            colors: [Color(0xff7ac6cb), Color(0xFFFF00)]),
+
                         borderRadius: BorderRadius.circular(40),
                       ),
-                      child: Center(
-                        child: Icon(Icons.person_outline),
-                      ),
+                      child: Image.asset(
+                        AppImage.getPath("profile_pic"),
+                        fit: BoxFit.fill,)
                     ),
                   ),
                   SizedBox(
@@ -71,7 +70,8 @@ class _HomeScreanState extends State<HomeScrean> {
                       style: TextStyle(
                         color: Colors.grey,
                         fontSize: 14,
-                          fontWeight: FontWeight.w500
+                          fontWeight: FontWeight.w500,
+                        fontFamily: "Lato",
                       ),
                     ),
                   ),
@@ -83,6 +83,7 @@ class _HomeScreanState extends State<HomeScrean> {
                           style: TextStyle(
                             color: Colors.blue,
                             fontSize: 14,
+                              fontFamily: "Lato",
                               fontWeight: FontWeight.w500
                           ),
                         )),
@@ -97,6 +98,7 @@ class _HomeScreanState extends State<HomeScrean> {
                       'Profile, post, performence etc ',
                       style: TextStyle(
                         color: Colors.blue,
+                        fontFamily: "Lato",
                         fontSize: 10,
                       ),
                     ),
@@ -154,6 +156,7 @@ class _HomeScreanState extends State<HomeScrean> {
                                     ' activities child',
                                     style: TextStyle(
                                       color: Colors.black,
+                                      fontFamily: "Lato",
                                       fontWeight: FontWeight.w500,
                                       fontSize: 16,
                                     ),
@@ -165,6 +168,7 @@ class _HomeScreanState extends State<HomeScrean> {
                                     ' attendence, lesion plan, picture etc',
                                     style: TextStyle(
                                       color: Colors.black,
+                                      fontFamily: "Lato",
                                       fontSize: 12,
                                     ),
                                   ),
@@ -214,6 +218,7 @@ class _HomeScreanState extends State<HomeScrean> {
                                     '  Diary',
                                     style: TextStyle(
                                       color: Colors.black,
+                                      fontFamily: "Lato",
                                       fontWeight: FontWeight.w500,
                                       fontSize: 16,
                                     ),
@@ -225,6 +230,7 @@ class _HomeScreanState extends State<HomeScrean> {
                                     ' View Todays Diary',
                                     style: TextStyle(
                                       color: Colors.black,
+                                      fontFamily: "Lato",
                                       fontSize: 12,
                                     ),
                                   ),
@@ -276,6 +282,7 @@ class _HomeScreanState extends State<HomeScrean> {
                                     ' Special Notes',
                                     style: TextStyle(
                                       color: Colors.black,
+                                      fontFamily: "Lato",
                                       fontWeight: FontWeight.w500,
                                       fontSize: 16,
                                     ),
@@ -287,6 +294,7 @@ class _HomeScreanState extends State<HomeScrean> {
                                     ' leave a custom notes for etc',
                                     style: TextStyle(
                                       color: Colors.black,
+                                      fontFamily: "Lato",
                                       fontSize: 12,
                                     ),
                                   ),
@@ -338,6 +346,7 @@ class _HomeScreanState extends State<HomeScrean> {
                                     'Transfer Child',
                                     style: TextStyle(
                                       color: Colors.black,
+                                      fontFamily: "Lato",
                                       fontWeight: FontWeight.w500,
                                       fontSize: 16,
                                     ),
@@ -349,6 +358,7 @@ class _HomeScreanState extends State<HomeScrean> {
                                     ' Transfer child to another school',
                                     style: TextStyle(
                                       color: Colors.black,
+                                      fontFamily: "Lato",
                                       fontSize: 12,
                                     ),
                                   ),
@@ -401,6 +411,7 @@ class _HomeScreanState extends State<HomeScrean> {
                                     style: TextStyle(
                                       color: Colors.black,
                                       fontWeight: FontWeight.w500,
+                                      fontFamily: "Lato",
                                       fontSize: 16,
                                     ),
                                   ),
@@ -411,6 +422,7 @@ class _HomeScreanState extends State<HomeScrean> {
                                     ' view each days reports,notes pictures',
                                     style: TextStyle(
                                       color: Colors.black,
+                                      fontFamily: "Lato",
                                       fontSize: 12,
                                     ),
 
@@ -464,6 +476,7 @@ class _HomeScreanState extends State<HomeScrean> {
                                     style: TextStyle(
                                       color: Colors.black,
                                       fontWeight: FontWeight.w500,
+                                      fontFamily: "Lato",
                                       fontSize: 16,
                                     ),
                                   ),
@@ -474,6 +487,7 @@ class _HomeScreanState extends State<HomeScrean> {
                                     'View all lession plan',
                                     style: TextStyle(
                                       color: Colors.black,
+                                      fontFamily: "Lato",
                                       fontSize: 12,
                                     ),
 
@@ -527,6 +541,7 @@ class _HomeScreanState extends State<HomeScrean> {
                                     style: TextStyle(
                                       color: Colors.black,
                                       fontWeight: FontWeight.w500,
+                                      fontFamily: "Lato",
                                       fontSize: 16,
                                     ),
                                   ),
@@ -537,6 +552,7 @@ class _HomeScreanState extends State<HomeScrean> {
                                     'View your childs best momment ',
                                     style: TextStyle(
                                       color: Colors.black,
+                                      fontFamily: "Lato",
                                       fontSize: 12,
                                     ),
                                   ),

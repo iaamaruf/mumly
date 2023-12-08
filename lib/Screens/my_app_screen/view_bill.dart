@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:new_mumlly_app/Screens/my_app_screen/billing.dart';
+import 'package:new_mumlly_app/Utilities/size_config.dart';
 
 import 'child_managment.dart';
 import 'invoice.dart';
@@ -22,8 +23,8 @@ class _view_all_billState extends State<view_all_bill> {
               children: [
                 Container(
                   margin: EdgeInsets.all(22),
-                  height: 45,
-                  width: 45,
+                  height: SizeConfig.screenHeight * 0.05,
+                  width: SizeConfig.screenWidth * 0.1,
                   decoration: BoxDecoration(
                     color: Colors.grey.shade300,
                     borderRadius: BorderRadius.circular(42),
@@ -45,6 +46,7 @@ class _view_all_billState extends State<view_all_bill> {
                         style: TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
+                            fontFamily: "Lato",
                             color: Colors.black),
                       ),
                       SizedBox(
@@ -55,6 +57,7 @@ class _view_all_billState extends State<view_all_bill> {
                         style: TextStyle(
                             fontSize: 12,
                             fontWeight: FontWeight.bold,
+                            fontFamily: "Lato",
                             color: Colors.black),
                       ),
                     ],
@@ -65,8 +68,8 @@ class _view_all_billState extends State<view_all_bill> {
                 ),
                 Container(
                   margin: EdgeInsets.all(22),
-                  height: 45,
-                  width: 45,
+                  height: SizeConfig.screenHeight * 0.05,
+                  width: SizeConfig.screenWidth * 0.1,
                   decoration: BoxDecoration(
                     color: Colors.grey.shade300,
                     borderRadius: BorderRadius.circular(42),
@@ -78,8 +81,8 @@ class _view_all_billState extends State<view_all_bill> {
             Row(
               children: [
                 Container(
-                  height: 230,
-                  width: 320,
+                  height: SizeConfig.screenHeight* 0.28,
+                  width: SizeConfig.screenWidth* 0.83,
                   margin: EdgeInsets.fromLTRB(30, 10, 0, 0),
                   decoration: BoxDecoration(
                       color: Colors.grey,
@@ -97,6 +100,7 @@ class _view_all_billState extends State<view_all_bill> {
                                   style: TextStyle(
                                       fontSize: 16,
                                       fontWeight: FontWeight.bold,
+                                      fontFamily: "Lato",
                                       color: Colors.black),
                                 ),
                               ],
@@ -108,8 +112,8 @@ class _view_all_billState extends State<view_all_bill> {
                         children: [
                           Container(
                               margin: EdgeInsets.all(22),
-                              height: 35,
-                              width: 35,
+                              height: SizeConfig.screenHeight * 0.045,
+                              width: SizeConfig.screenWidth * 0.095,
                               decoration: BoxDecoration(
                                 color: Colors.white,
                                 borderRadius: BorderRadius.circular(42),
@@ -119,6 +123,7 @@ class _view_all_billState extends State<view_all_bill> {
                             style: TextStyle(
                                 fontSize: 17,
                                 fontWeight: FontWeight.bold,
+                                fontFamily: "Lato",
                                 color: Colors.black),
                           ),
                           SizedBox(
@@ -132,6 +137,7 @@ class _view_all_billState extends State<view_all_bill> {
                                   style: TextStyle(
                                       fontSize: 12,
                                       fontWeight: FontWeight.bold,
+                                      fontFamily: "Lato",
                                       color: Colors.black),
                                 ),
                                 SizedBox(
@@ -142,6 +148,7 @@ class _view_all_billState extends State<view_all_bill> {
                                   style: TextStyle(
                                       fontSize: 15,
                                       fontWeight: FontWeight.bold,
+                                      fontFamily: "Lato",
                                       color: Colors.black),
                                 ),
                               ],
@@ -155,10 +162,10 @@ class _view_all_billState extends State<view_all_bill> {
                             padding: EdgeInsets.all(5),
                             margin: EdgeInsets.fromLTRB(25, 0, 23, 0),
                             child: Container(
-                              height: 50,
-                              width: 250,
+                              height: SizeConfig.screenHeight * 0.05,
+                              width: SizeConfig.screenWidth * 0.65,
                               decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(7),
+                                borderRadius: BorderRadius.circular(17),
                                 color: Colors.white,
                               ),
                               child: Row(
@@ -169,14 +176,16 @@ class _view_all_billState extends State<view_all_bill> {
                                   Text(
                                     'Your total payment',
                                     style: TextStyle(
-                                        fontSize: 15, color: Colors.black),
+                                        fontSize: 15,
+                                        fontFamily: "Lato",
+                                        color: Colors.black),
                                   ),
                                   SizedBox(
                                     width: 55,
                                   ),
                                   Container(
-                                    height: 24,
-                                    width: 40,
+                                    height: SizeConfig.screenHeight * 0.03,
+                                    width: SizeConfig.screenWidth * 0.13,
                                     decoration: BoxDecoration(
                                         color: Colors.grey,
                                         borderRadius:
@@ -188,6 +197,7 @@ class _view_all_billState extends State<view_all_bill> {
                                         style: TextStyle(
                                             fontSize: 10,
                                             fontWeight: FontWeight.bold,
+                                            fontFamily: "Lato",
                                             color: Colors.black),
                                       ),
                                     ),
@@ -207,8 +217,8 @@ class _view_all_billState extends State<view_all_bill> {
                             width: 25,
                           ),
                           SizedBox(
-                              height: 40,
-                              width: 260,
+                              height: SizeConfig.screenHeight * 0.05,
+                              width: SizeConfig.screenWidth * 0.65,
                               child: ElevatedButton(
                                 onPressed: () {
                                   Navigator.of(context).push(
@@ -222,7 +232,9 @@ class _view_all_billState extends State<view_all_bill> {
                                 ),
                                 child: Text(
                                   'View Invoice',
-                                  style: TextStyle(color: Colors.white),
+                                  style: TextStyle(color: Colors.white,
+                                    fontFamily: "Lato",
+                                  ),
                                 ),
                               ))
                         ],
@@ -238,8 +250,8 @@ class _view_all_billState extends State<view_all_bill> {
             Row(
               children: [
                 Container(
-                  height: 230,
-                  width: 320,
+                  height: SizeConfig.screenHeight* 0.28,
+                  width: SizeConfig.screenWidth* 0.83,
                   margin: EdgeInsets.fromLTRB(30, 10, 0, 0),
                   decoration: BoxDecoration(
                       color: Colors.grey,
@@ -257,6 +269,7 @@ class _view_all_billState extends State<view_all_bill> {
                                   style: TextStyle(
                                       fontSize: 16,
                                       fontWeight: FontWeight.bold,
+                                      fontFamily: "Lato",
                                       color: Colors.black),
                                 ),
                               ],
@@ -268,8 +281,8 @@ class _view_all_billState extends State<view_all_bill> {
                         children: [
                           Container(
                               margin: EdgeInsets.all(22),
-                              height: 35,
-                              width: 35,
+                              height: SizeConfig.screenHeight * 0.045,
+                              width: SizeConfig.screenWidth * 0.095,
                               decoration: BoxDecoration(
                                 color: Colors.white,
                                 borderRadius: BorderRadius.circular(42),
@@ -279,6 +292,7 @@ class _view_all_billState extends State<view_all_bill> {
                             style: TextStyle(
                                 fontSize: 17,
                                 fontWeight: FontWeight.bold,
+                                fontFamily: "Lato",
                                 color: Colors.black),
                           ),
                           SizedBox(
@@ -292,6 +306,7 @@ class _view_all_billState extends State<view_all_bill> {
                                   style: TextStyle(
                                       fontSize: 12,
                                       fontWeight: FontWeight.bold,
+                                      fontFamily: "Lato",
                                       color: Colors.black),
                                 ),
                                 SizedBox(
@@ -302,6 +317,7 @@ class _view_all_billState extends State<view_all_bill> {
                                   style: TextStyle(
                                       fontSize: 15,
                                       fontWeight: FontWeight.bold,
+                                      fontFamily: "Lato",
                                       color: Colors.black),
                                 ),
                               ],
@@ -315,10 +331,10 @@ class _view_all_billState extends State<view_all_bill> {
                             padding: EdgeInsets.all(5),
                             margin: EdgeInsets.fromLTRB(25, 0, 23, 0),
                             child: Container(
-                              height: 50,
-                              width: 250,
+                              height: SizeConfig.screenHeight * 0.05,
+                              width: SizeConfig.screenWidth * 0.65,
                               decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(7),
+                                borderRadius: BorderRadius.circular(17),
                                 color: Colors.white,
                               ),
                               child: Row(
@@ -329,18 +345,20 @@ class _view_all_billState extends State<view_all_bill> {
                                   Text(
                                     'Your total payment',
                                     style: TextStyle(
-                                        fontSize: 15, color: Colors.black),
+                                        fontSize: 15,
+                                        fontFamily: "Lato",
+                                        color: Colors.black),
                                   ),
                                   SizedBox(
                                     width: 55,
                                   ),
                                   Container(
-                                    height: 24,
-                                    width: 40,
+                                    height: SizeConfig.screenHeight * 0.03,
+                                    width: SizeConfig.screenWidth * 0.13,
                                     decoration: BoxDecoration(
                                         color: Colors.grey,
                                         borderRadius:
-                                            BorderRadius.circular(10)),
+                                        BorderRadius.circular(10)),
                                     child: Container(
                                       margin: EdgeInsets.fromLTRB(13, 4, 2, 2),
                                       child: Text(
@@ -348,6 +366,7 @@ class _view_all_billState extends State<view_all_bill> {
                                         style: TextStyle(
                                             fontSize: 10,
                                             fontWeight: FontWeight.bold,
+                                            fontFamily: "Lato",
                                             color: Colors.black),
                                       ),
                                     ),
@@ -367,8 +386,8 @@ class _view_all_billState extends State<view_all_bill> {
                             width: 25,
                           ),
                           SizedBox(
-                              height: 40,
-                              width: 260,
+                              height: SizeConfig.screenHeight * 0.05,
+                              width: SizeConfig.screenWidth * 0.65,
                               child: ElevatedButton(
                                 onPressed: () {
                                   Navigator.of(context).push(
@@ -382,7 +401,9 @@ class _view_all_billState extends State<view_all_bill> {
                                 ),
                                 child: Text(
                                   'View Invoice',
-                                  style: TextStyle(color: Colors.white),
+                                  style: TextStyle(color: Colors.white,
+                                    fontFamily: "Lato",
+                                  ),
                                 ),
                               ))
                         ],

@@ -2,6 +2,8 @@
 import 'package:flutter/material.dart';
 import 'package:new_mumlly_app/Screens/my_app_screen/view_bill.dart';
 import 'package:new_mumlly_app/Utilities/colors.dart';
+import 'package:new_mumlly_app/Utilities/images.dart';
+import 'package:new_mumlly_app/Utilities/size_config.dart';
 
 import 'child_managment.dart';
 
@@ -27,12 +29,13 @@ class _invoiceState extends State<invoice> {
               margin: EdgeInsets.only(left: 20),
               child: Text('Payment ID: yhsksn43jb', style: TextStyle(
                   fontSize: 16,fontWeight: FontWeight.bold,
+                  fontFamily: "Lato",
                   color: Colors.white),),
             ),
             Container(
               margin: EdgeInsets.fromLTRB(15, 20, 10, 10),
-              height: 620,
-              width: 360,
+              height: SizeConfig.screenHeight * 0.76,
+              width: SizeConfig.screenWidth * 0.9,
 
               decoration: BoxDecoration(
                 color: AppColor.white,
@@ -48,11 +51,14 @@ class _invoiceState extends State<invoice> {
                       children: [
                         Container(
                           margin: EdgeInsets.only(top: 20),
-                          height: 80,
-                          width: 80,
+                          height: SizeConfig.screenHeight * 0.09,
+                          width: SizeConfig.screenWidth * 0.18,
+                            child: Image.asset(
+                             AppImage.getPath("main_pic"),
+                                fit: BoxFit.fill,),
                           decoration: BoxDecoration(
                             color: AppColor.gray,
-                            borderRadius: BorderRadius.circular(42),
+                            borderRadius: BorderRadius.circular(30),
 
 
                           ),
@@ -61,19 +67,21 @@ class _invoiceState extends State<invoice> {
                         SizedBox(height: 10),
                         Text('Child Name', style: TextStyle(
                             fontSize: 16,fontWeight: FontWeight.bold,
+                            fontFamily: "Lato",
                             color: Colors.black),),
                         SizedBox(height: 20),
                         Text('Date of Payment', style: TextStyle(
-                            fontSize: 12,
+                            fontSize: 12,fontFamily: "Lato",
                             color: AppColor.gray,),),
                         SizedBox(height: 12),
                         Text('Amount Due', style: TextStyle(
-                            fontSize: 16,
+                            fontSize: 16,fontFamily: "Lato",
                             color: Colors.black),),
 
                         SizedBox(height: 2),
                         Text('KSH1000', style: TextStyle(
                             fontSize: 26,fontWeight: FontWeight.bold,
+                            fontFamily: "Lato",
                             color: AppColor.tabColor),),
 
                       ],
@@ -95,10 +103,11 @@ class _invoiceState extends State<invoice> {
                                   children: [
                                     Text('Billing Plan', style: TextStyle(
                                         fontSize: 15,fontWeight: FontWeight.bold,
+                                        fontFamily: "Lato",
                                         color:AppColor.black),),
                                     SizedBox(height: 10,),
                                     Text('Monthly Plan', style: TextStyle(
-                                        fontSize: 15,
+                                        fontSize: 15,fontFamily: "Lato",
                                         color: AppColor.black),),
                                   ],
                                 ),
@@ -107,8 +116,8 @@ class _invoiceState extends State<invoice> {
                               SizedBox(height: 10,),
 
                               Container(
-                                height: 120,
-                                width: 300,
+                                height: SizeConfig.screenHeight * 0.13,
+                                width: SizeConfig.screenWidth * 0.78,
 
                                 decoration: BoxDecoration(
                                   color: Colors.grey.shade200,
@@ -122,7 +131,7 @@ class _invoiceState extends State<invoice> {
                                       'you can use the ButtonStyle widget. '
                                       'Inside the ButtonStyle widget you '
                                       'can add ', style: TextStyle(
-                                      fontSize: 15,
+                                      fontSize: 15,fontFamily: "Lato",
                                       color: AppColor.black)),
                                 ),
                               ),
@@ -138,11 +147,13 @@ class _invoiceState extends State<invoice> {
                                 children: [
                                   Text('Statas', style: TextStyle(
                                       fontSize: 15,fontWeight: FontWeight.bold,
+                                      fontFamily: "Lato",
                                       color: AppColor.black),),
                                   SizedBox(width: 210,),
 
                                   Text('Paid', style: TextStyle(
                                       fontSize: 15,fontWeight: FontWeight.bold,
+                                      fontFamily: "Lato",
                                       color: AppColor.black),),
                                 ],
                               ),
@@ -153,7 +164,7 @@ class _invoiceState extends State<invoice> {
                                     Row(
                                       children: [
                                         Text('Transaction ID:', style: TextStyle(
-                                            fontSize: 15,
+                                            fontSize: 15,fontFamily: "Lato",
                                             color: AppColor.black),),
                                         SizedBox(width: 140,),
                                         Text('Y53gyw', style: TextStyle(
@@ -165,11 +176,12 @@ class _invoiceState extends State<invoice> {
                                     Row(
                                       children: [
                                         Text('Invoice Date:', style: TextStyle(
-                                            fontSize: 15,
+                                            fontSize: 15,fontFamily: "Lato",
                                             color: AppColor.black),),
                                         SizedBox(width: 120,),
                                         Text('March 19, 2021', style: TextStyle(
                                             fontSize: 13,fontWeight: FontWeight.bold,
+                                            fontFamily: "Lato",
                                             color: AppColor.black),),
                                       ],
                                     ),
@@ -177,11 +189,12 @@ class _invoiceState extends State<invoice> {
                                     Row(
                                       children: [
                                         Text('Date of payment:', style: TextStyle(
-                                            fontSize: 15,
+                                            fontSize: 15,fontFamily: "Lato",
                                             color: AppColor.black),),
                                         SizedBox(width: 100,),
                                         Text('March 19, 2021', style: TextStyle(
                                             fontSize: 13,fontWeight: FontWeight.bold,
+                                            fontFamily: "Lato",
                                             color: AppColor.black),),
                                       ],
                                     ),

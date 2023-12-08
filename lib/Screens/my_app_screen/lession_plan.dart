@@ -43,6 +43,7 @@ class _secondState extends State<second> {
               '12 June 2024',
               style: TextStyle(
                 color: Colors.black,
+                fontFamily: "Lato",
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
               ),
@@ -94,6 +95,7 @@ class _secondState extends State<second> {
                                   ' Lession Name',
                                   style: TextStyle(
                                     color: Colors.black,
+                                    fontFamily: "Lato",
                                     fontSize: 16,
                                     fontWeight: FontWeight.w500,
                                   ),
@@ -103,6 +105,7 @@ class _secondState extends State<second> {
                                   style: TextStyle(
                                     color: Colors.grey,
                                     fontSize: 10,
+                                    fontFamily: "Lato",
                                   ),
                                 ),
 
@@ -110,6 +113,7 @@ class _secondState extends State<second> {
                                   ' Teacher Name',
                                   style: TextStyle(
                                     color: Colors.grey,
+                                    fontFamily: "Lato",
                                     fontSize: 10,
                                   ),
                                 ),

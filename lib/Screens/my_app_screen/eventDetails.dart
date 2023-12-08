@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:new_mumlly_app/Screens/my_app_screen/barcode.dart';
+import 'package:new_mumlly_app/Utilities/images.dart';
 
 class event_details extends StatefulWidget {
   const event_details({super.key});
@@ -18,6 +19,7 @@ class _event_detailsState extends State<event_details> {
           toolbarHeight: 80,
           title: const Text(
             '       Choose Date',
+            style: TextStyle(fontFamily: "Lato",),
           ),
 
           flexibleSpace: Container(
@@ -57,6 +59,7 @@ class _event_detailsState extends State<event_details> {
                     children: [
                       Text('                Details', style: TextStyle(
                           fontSize: 20,fontWeight: FontWeight.bold,
+                          fontFamily: "Lato",
                           color: Colors.grey),),
 
                     ],
@@ -71,10 +74,13 @@ class _event_detailsState extends State<event_details> {
                 Container(
                   height: 200,
                   width: 330,
+                  child: Image.asset(
+                    AppImage.getPath("code"),
+                    fit: BoxFit.fill,),
                   margin: EdgeInsets.fromLTRB(30, 10, 0, 0),
       
                   decoration: BoxDecoration(
-                      color: Colors.grey.shade300,
+                    color: Colors.deepPurple,
                       borderRadius: BorderRadius.circular(20)
                   ),
 
@@ -91,11 +97,13 @@ class _event_detailsState extends State<event_details> {
                 children: [
                   Text('Coding Bootcamp For Kids', style: TextStyle(
                       fontSize: 23, fontWeight: FontWeight.bold,
+                      fontFamily: "Lato",
                       color: Colors.black),),
                   SizedBox(height: 30,),
 
                   Text('By organizer', style: TextStyle(
                       fontSize: 15, fontWeight: FontWeight.bold,
+                      fontFamily: "Lato",
                       color: Colors.grey),),
 
 
@@ -124,6 +132,7 @@ class _event_detailsState extends State<event_details> {
                         margin: EdgeInsets.fromLTRB(15, 10, 0, 0),
                         child: Text('Time and Date', style: TextStyle(
                             fontSize: 15, fontWeight: FontWeight.bold,
+                            fontFamily: "Lato",
                             color: Colors.grey),),
                       ),
                       SizedBox(width: 50,),
@@ -132,10 +141,12 @@ class _event_detailsState extends State<event_details> {
                         children: [
                           Text('23 March 2023', style: TextStyle(
                               fontSize: 15, fontWeight: FontWeight.bold,
+                              fontFamily: "Lato",
                               color: Colors.black),),
 
                           Text('11:30 PM', style: TextStyle(
                               fontSize: 15, fontWeight: FontWeight.bold,
+                              fontFamily: "Lato",
                               color: Colors.black),),
                         ],
                       ),
@@ -152,6 +163,7 @@ class _event_detailsState extends State<event_details> {
                         margin: EdgeInsets.fromLTRB(15, 10, 0, 0),
                         child: Text('Location', style: TextStyle(
                             fontSize: 15, fontWeight: FontWeight.bold,
+                            fontFamily: "Lato",
                             color: Colors.grey),),
                       ),
                       SizedBox(width: 30,),
@@ -163,6 +175,7 @@ class _event_detailsState extends State<event_details> {
                             width: 140,
                             child: Text('Lepdek convention centre, Sukabumi', style: TextStyle(
                                 fontSize: 15, fontWeight: FontWeight.bold,
+                                fontFamily: "Lato",
                                 color: Colors.black),),
                           ),
 
@@ -185,6 +198,7 @@ class _event_detailsState extends State<event_details> {
               margin: EdgeInsets.only(left: 25),
               child: Text('Participants', style: TextStyle(
                   fontSize: 22, fontWeight: FontWeight.bold,
+                  fontFamily: "Lato",
                   color: Colors.black),),
             ),
             Row(
@@ -199,7 +213,8 @@ class _event_detailsState extends State<event_details> {
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.grey.shade400,
                       ),
-                      child: Text('Send' , style: TextStyle(color: Colors.white),
+                      child: Text('Send' , style: TextStyle(color: Colors.white,
+                        fontFamily: "Lato",),
                       ),
                     )),
                 SizedBox(width: 8,),
@@ -213,7 +228,8 @@ class _event_detailsState extends State<event_details> {
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.grey.shade400,
                       ),
-                      child: Text('Send' , style: TextStyle(color: Colors.white),
+                      child: Text('Send' , style: TextStyle(color: Colors.white,
+                        fontFamily: "Lato",),
                       ),
                     )),
                 SizedBox(width: 8,),
@@ -241,7 +257,7 @@ class _event_detailsState extends State<event_details> {
                         backgroundColor: Colors.deepPurple,
                       ),
                       child: Text('10+', style: TextStyle(
-                          fontSize: 18,
+                          fontSize: 18,fontFamily: "Lato",
                           color: Colors.white),),
                     )),
                 SizedBox(width: 8,),
@@ -267,7 +283,7 @@ class _event_detailsState extends State<event_details> {
                       backgroundColor: Colors.deepPurple,
                     ),
                     child: Text('Book and pay ticket', style: TextStyle(
-                        fontSize: 18,
+                        fontSize: 18,fontFamily: "Lato",
                         color: Colors.white),),
                   )),
             ),

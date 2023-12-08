@@ -24,6 +24,7 @@ class _add_new_childState extends State<add_new_child> {
         title: const Text(
           '     Add New Child',
           style: TextStyle(fontSize: 20,
+              fontFamily: "Lato",
               fontWeight: FontWeight.w500),
         ),
 
@@ -96,6 +97,7 @@ class _add_new_childState extends State<add_new_child> {
                           'Name',
                           style: TextStyle(
                             color: Colors.black,
+                            fontFamily: "Lato",
                             fontSize: 14,
                           ),
                         ),
@@ -107,11 +109,10 @@ class _add_new_childState extends State<add_new_child> {
                         height: 50,
                         width: 280,
                         decoration: BoxDecoration(
-        
                           borderRadius: BorderRadius.circular(15),
-                          border: Border.all(),
-
-        
+                          border: Border.all(
+                            color: Colors.purple.shade200,
+                          ),
                         ),
                         child: TextField (
                           decoration: InputDecoration(
@@ -159,6 +160,7 @@ class _add_new_childState extends State<add_new_child> {
                       'Date of Birth',
                       style: TextStyle(
                         color: Colors.black,
+                        fontFamily: "Lato",
                         fontSize: 14,
                       ),
                     ),
@@ -172,7 +174,8 @@ class _add_new_childState extends State<add_new_child> {
                       decoration: BoxDecoration(
         
                         borderRadius: BorderRadius.circular(15),
-                        border: Border.all(),
+                        border: Border.all(color: Colors.purple.shade200,),
+
         
                       ),
                       child: Container(
@@ -189,7 +192,9 @@ class _add_new_childState extends State<add_new_child> {
                               value: value,
                               child: Text(
                                 value,
-                                style: TextStyle(fontSize: 18, color: Colors.grey),
+                                style: TextStyle(fontSize: 18,
+                                    fontFamily: "Lato",
+                                    color: Colors.grey),
                               ),
                             );
                           }).toList(),
@@ -211,6 +216,7 @@ class _add_new_childState extends State<add_new_child> {
                       'Choose School',
                       style: TextStyle(
                         color: Colors.black,
+                        fontFamily: "Lato",
                         fontSize: 14,
                       ),
                     ),
@@ -224,7 +230,7 @@ class _add_new_childState extends State<add_new_child> {
                     decoration: BoxDecoration(
 
                       borderRadius: BorderRadius.circular(15),
-                      border: Border.all(),
+                      border: Border.all(color: Colors.purple.shade200,),
 
                     ),
                     child: Container(
@@ -241,7 +247,9 @@ class _add_new_childState extends State<add_new_child> {
                             value: value,
                             child: Text(
                               value,
-                              style: TextStyle(fontSize: 18, color: Colors.grey),
+                              style: TextStyle(fontSize: 18,
+                                  fontFamily: "Lato",
+                                  color: Colors.grey),
                             ),
                           );
                         }).toList(),
@@ -263,6 +271,7 @@ class _add_new_childState extends State<add_new_child> {
                       'Choose Class',
                       style: TextStyle(
                         color: Colors.black,
+                        fontFamily: "Lato",
                         fontSize: 18,
                       ),
                     ),
@@ -276,7 +285,7 @@ class _add_new_childState extends State<add_new_child> {
                     decoration: BoxDecoration(
 
                       borderRadius: BorderRadius.circular(15),
-                      border: Border.all(),
+                      border: Border.all(color: Colors.purple.shade200,),
 
                     ),
                     child: Container(
@@ -293,7 +302,8 @@ class _add_new_childState extends State<add_new_child> {
                             value: value,
                             child: Text(
                               value,
-                              style: TextStyle(fontSize: 18, color: Colors.grey),
+                              style: TextStyle(fontSize: 18,
+                                  fontFamily: "Lato",color: Colors.grey),
                             ),
                           );
                         }).toList(),
@@ -325,7 +335,8 @@ class _add_new_childState extends State<add_new_child> {
                     backgroundColor: Colors.deepPurple,
                   ),
                   child: Text('Add Child' ,
-                    style: TextStyle(color: Colors.white),
+                    style: TextStyle(color: Colors.white,
+                      fontFamily: "Lato",),
                   ),
                 ))
         

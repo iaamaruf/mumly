@@ -84,7 +84,8 @@ class _child_popupState extends State<child_popup> {
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 28,
-                        fontWeight: FontWeight.w500
+                        fontWeight: FontWeight.w500,
+                      fontFamily: "Lato",
                     ),
                   ),
                 ),
@@ -101,6 +102,7 @@ class _child_popupState extends State<child_popup> {
                         ' will be availableonce they confirm',
                     style: TextStyle(
                       color: Colors.grey,
+                      fontFamily: "Lato",
                       fontSize: 14,
                     ),
                   ),
@@ -127,7 +129,8 @@ class _child_popupState extends State<child_popup> {
                   backgroundColor: Colors.deepPurple,
                 ),
                 child: Text('ok' ,
-                  style: TextStyle(color: Colors.white),
+                  style: TextStyle(color: Colors.white,
+                    fontFamily: "Lato",),
                 ),
               ))
         ],

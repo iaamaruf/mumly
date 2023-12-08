@@ -35,7 +35,9 @@ class AppColor{
   static Color successfulTextColor = const Color(0xff97D700);
 
   static Color green1 = const Color(0xff008000);
+  static Color cream = const Color(0xffF9F6E4);
 
+  static Color gold = const Color(0xffFC9144);
 
   static Color appBackgroundColor = const Color(0xffEFEFEF);
   static Color hyperLinkTextColor = const Color(0xff0065FC);

@@ -1,15 +1,12 @@
 import 'package:flutter/material.dart';
-
-import 'package:carousel_slider/carousel_slider.dart';
 import 'package:new_mumlly_app/Common/side_bar.dart';
-import 'package:new_mumlly_app/Screens/Student/notice%20screen.dart';
+import 'package:new_mumlly_app/Screens/my_app_screen/AlleventPage.dart';
 import 'package:new_mumlly_app/Screens/my_app_screen/add_new_child.dart';
-import 'package:new_mumlly_app/Screens/my_app_screen/allEventPage.dart';
 import 'package:new_mumlly_app/Screens/my_app_screen/child_managment.dart';
 import 'package:new_mumlly_app/Screens/my_app_screen/eventDetails.dart';
-import 'package:new_mumlly_app/Screens/my_app_screen/eventPage.dart';
+import 'package:new_mumlly_app/Screens/my_app_screen/profile_events.dart';
 import 'package:new_mumlly_app/Screens/my_app_screen/transfer.dart';
-import 'package:new_mumlly_app/Screens/my_app_screen/view_bill.dart';
+
 import 'package:new_mumlly_app/Utilities/colors.dart';
 import 'package:new_mumlly_app/Utilities/images.dart';
 import 'package:new_mumlly_app/Utilities/size_config.dart';
@@ -64,6 +61,7 @@ class _StudentHomeScreenState extends State<StudentHomeScreen> {
                                       fontSize: 20.0,
                                       color: AppColor.black,
                                       fontWeight: FontWeight.w500,
+                                      fontFamily: "Lato"
                                   ),
                                 ),
                                 Row(
@@ -78,6 +76,7 @@ class _StudentHomeScreenState extends State<StudentHomeScreen> {
                                         style: TextStyle(
                                             fontSize: 20,
                                             color: AppColor.fTextColor,
+                                            fontFamily: "Lato"
 
                                         ),
                                         //getCommonProvider.getDriverDetails()!.data!.phoneCode! + getCommonProvider.getDriverDetails()!.data!.phoneNumber!
@@ -121,6 +120,7 @@ class _StudentHomeScreenState extends State<StudentHomeScreen> {
                               style: TextStyle(
                                 fontSize: 20,
                                 fontWeight: FontWeight.w500,
+                                  fontFamily: "Lato"
                               ),
                             ),
                           ),
@@ -141,6 +141,7 @@ class _StudentHomeScreenState extends State<StudentHomeScreen> {
                                 style: TextStyle(
                                   fontSize: 18,
                                   color: AppColor.fTextColor,
+                                    fontFamily: "Lato"
                                 ),
                               ),
                             ),
@@ -156,8 +157,8 @@ class _StudentHomeScreenState extends State<StudentHomeScreen> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Container(
-                              height: 280,
-                              width: 250,
+                              height: SizeConfig.screenHeight * 0.36,
+                              width: SizeConfig.screenWidth * 0.62,
                               padding:EdgeInsets.only(left: 15),
 
                               margin: EdgeInsets.all(15),
@@ -172,7 +173,7 @@ class _StudentHomeScreenState extends State<StudentHomeScreen> {
                                 children: [
 
                                   Container(
-                                    height: 230,
+                                    height: 220,
                                     width: 220,
                                       decoration: BoxDecoration(
                                         color: Colors.grey.shade400,
@@ -180,31 +181,34 @@ class _StudentHomeScreenState extends State<StudentHomeScreen> {
                                         borderRadius: BorderRadius.circular(5),
                                       ),
 
-                                    padding: EdgeInsets.all(3),
                                     child:Image.asset(
                                       AppImage.getPath("main_pic"),
                                       fit: BoxFit.fill,)
                                   ),
 
-                                  Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
-                                      SizedBox(width: 10,),
-                                      Text(
-                                        '  Tom',
-                                        style: TextStyle(fontSize:20,
-                                            fontWeight: FontWeight.w500,
-                                            color: Colors.black),
-                                      ),
-                                      Text(
-                                        '  School Name',
-                                        style: TextStyle(
-                                            fontSize: 15,
-                                            fontWeight: FontWeight.w500,
-
-                                            color: Colors.blue),
-                                      ),
-                                    ],
+                                  Container(
+                                    padding: EdgeInsets.all(7),
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Text(
+                                          '  Tom',
+                                          style: TextStyle(fontSize:20,
+                                              fontWeight: FontWeight.w500,
+                                              fontFamily: "Lato",
+                                              color: Colors.black),
+                                        ),
+                                        Text(
+                                          '  School Name',
+                                          style: TextStyle(
+                                              fontSize: 15,
+                                              fontFamily: "Lato",
+                                              fontWeight: FontWeight.w500,
+                                    
+                                              color: Colors.blue),
+                                        ),
+                                      ],
+                                    ),
                                   )
 
                                 ],
@@ -212,8 +216,8 @@ class _StudentHomeScreenState extends State<StudentHomeScreen> {
 
                             ),
                             Container(
-                              height: 280,
-                              width: 250,
+                              height: SizeConfig.screenHeight * 0.36,
+                              width: SizeConfig.screenWidth * 0.62,
                               padding:EdgeInsets.only(left: 15),
 
                               margin: EdgeInsets.all(15),
@@ -228,7 +232,7 @@ class _StudentHomeScreenState extends State<StudentHomeScreen> {
                                 children: [
 
                                   Container(
-                                      height: 230,
+                                      height: 220,
                                       width: 220,
                                       decoration: BoxDecoration(
                                         color: Colors.grey.shade400,
@@ -242,25 +246,29 @@ class _StudentHomeScreenState extends State<StudentHomeScreen> {
                                         fit: BoxFit.fill,)
                                   ),
 
-                                  Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
-                                      SizedBox(width: 10,),
-                                      Text(
-                                        '  Tom',
-                                        style: TextStyle(fontSize:20,
-                                            fontWeight: FontWeight.w500,
-                                            color: Colors.black),
-                                      ),
-                                      Text(
-                                        '  School Name',
-                                        style: TextStyle(
-                                            fontSize: 15,
-                                            fontWeight: FontWeight.w500,
+                                  Container(
+                                    padding: EdgeInsets.all(7),
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Text(
+                                          '  Tom',
+                                          style: TextStyle(fontSize:20,
+                                              fontWeight: FontWeight.w500,
+                                              fontFamily: "Lato",
+                                              color: Colors.black),
+                                        ),
+                                        Text(
+                                          '  School Name',
+                                          style: TextStyle(
+                                              fontSize: 15,
+                                              fontFamily: "Lato",
+                                              fontWeight: FontWeight.w500,
 
-                                            color: Colors.blue),
-                                      ),
-                                    ],
+                                              color: Colors.blue),
+                                        ),
+                                      ],
+                                    ),
                                   )
 
                                 ],
@@ -274,8 +282,8 @@ class _StudentHomeScreenState extends State<StudentHomeScreen> {
                                  ),
 
                               child: Container(
-                                height: 280,
-                                width: 250,
+                                height: SizeConfig.screenHeight * 0.36,
+                                width: SizeConfig.screenWidth * 0.62,
                                 padding:EdgeInsets.only(left: 15),
 
                                 margin: EdgeInsets.all(15),
@@ -313,6 +321,7 @@ class _StudentHomeScreenState extends State<StudentHomeScreen> {
                                           ' Add New Child',
                                           style: TextStyle(fontSize: 25,
                                               fontWeight: FontWeight.bold,
+                                              fontFamily: "Lato",
                                               color: Colors.black),
                                         ),
 
@@ -341,6 +350,7 @@ class _StudentHomeScreenState extends State<StudentHomeScreen> {
                               style: TextStyle(
                                 fontSize: 20,
                                 fontWeight: FontWeight.w500,
+                                fontFamily: "Lato",
                               ),
                             ),
                           ),
@@ -355,6 +365,7 @@ class _StudentHomeScreenState extends State<StudentHomeScreen> {
                               style: TextStyle(
                                 fontSize: 18,
                                 color: AppColor.fTextColor,
+                                fontFamily: "Lato",
                               ),
                             ),
                           ),
@@ -389,7 +400,8 @@ class _StudentHomeScreenState extends State<StudentHomeScreen> {
 
                                         fontSize: 16,
                                         color: AppColor.black,
-                                        fontWeight: FontWeight.w500
+                                        fontWeight: FontWeight.w500,
+                                      fontFamily: "Lato",
                                     ),
                                   ),
                                 ),
@@ -400,7 +412,8 @@ class _StudentHomeScreenState extends State<StudentHomeScreen> {
 
                                       fontSize: 12,
                                       color: AppColor.deepGray,
-                                      fontWeight: FontWeight.w200
+                                      fontWeight: FontWeight.w200,
+                                    fontFamily: "Lato",
                                   ),
                                 ),
                                 SizedBox(height: 10,),
@@ -410,6 +423,7 @@ class _StudentHomeScreenState extends State<StudentHomeScreen> {
 
                                       fontSize: 14,
                                       color: AppColor.black,
+                                    fontFamily: "Lato",
                                   ),
                                 ),
                               ],
@@ -446,6 +460,7 @@ class _StudentHomeScreenState extends State<StudentHomeScreen> {
 
                                         fontSize: 16,
                                         color: AppColor.black,
+                                        fontFamily: "Lato",
                                         fontWeight: FontWeight.w500
                                     ),
                                   ),
@@ -457,6 +472,7 @@ class _StudentHomeScreenState extends State<StudentHomeScreen> {
 
                                       fontSize: 12,
                                       color: AppColor.deepGray,
+                                    fontFamily: "Lato",
 
                                   ),
                                 ),
@@ -466,6 +482,7 @@ class _StudentHomeScreenState extends State<StudentHomeScreen> {
                                   style: TextStyle(
                                     fontSize: 14,
                                     color: AppColor.black,
+                                    fontFamily: "Lato",
                                   ),
                                 ),
                               ],
@@ -502,6 +519,7 @@ class _StudentHomeScreenState extends State<StudentHomeScreen> {
 
                                         fontSize: 16,
                                         color: AppColor.black,
+                                        fontFamily: "Lato",
                                         fontWeight: FontWeight.w500
                                     ),
                                   ),
@@ -513,6 +531,7 @@ class _StudentHomeScreenState extends State<StudentHomeScreen> {
 
                                       fontSize: 12,
                                       color: AppColor.deepGray,
+                                    fontFamily: "Lato",
                                   ),
                                 ),
                                 SizedBox(height: 10,),
@@ -521,6 +540,7 @@ class _StudentHomeScreenState extends State<StudentHomeScreen> {
                                   style: TextStyle(
                                     fontSize: 14,
                                     color: AppColor.black,
+                                    fontFamily: "Lato",
                                   ),
                                 ),
                               ],

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:new_mumlly_app/Utilities/colors.dart';
+import 'package:new_mumlly_app/Utilities/size_config.dart';
 
 class Special_notes extends StatefulWidget {
   const Special_notes({super.key});
@@ -19,7 +21,7 @@ class _Special_notesState extends State<Special_notes> {
         title: const Text(
           'Leave a Special Notes',
           style: TextStyle(fontSize: 20,
-          fontWeight: FontWeight.w500),
+              fontWeight: FontWeight.w500),
         ),
 
         flexibleSpace: Container(
@@ -46,8 +48,8 @@ class _Special_notesState extends State<Special_notes> {
           Padding(
             padding: const EdgeInsets.fromLTRB(40, 120, 40, 40),
             child: Container(
-              height: 320,
-              width: 320,
+              height: SizeConfig.screenHeight * 0.4,
+              width: SizeConfig.screenWidth * 0.8,
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.only(
@@ -70,11 +72,11 @@ class _Special_notesState extends State<Special_notes> {
                     children: [
                       Container(
                         padding: EdgeInsets.only(top: 15),
-                      margin: EdgeInsets.only(left: 15),
-                      child: Text('Term', style: TextStyle(
-                          fontSize: 18,
-                          color: Colors.black),),
-                    ),],
+                        margin: EdgeInsets.only(left: 15),
+                        child: Text('Term', style: TextStyle(
+                            fontSize: 18,
+                            color: Colors.black),),
+                      ),],
                   ),
                   SizedBox(height: 7,),
                   Row(
@@ -82,13 +84,15 @@ class _Special_notesState extends State<Special_notes> {
                       Container(
                           margin: EdgeInsets.only(left: 30),
                           height: 40,
+                          width: 240,
 
                           padding: EdgeInsets.only(
                             left: 20,
                             right: 20,
                           ),
                           decoration: BoxDecoration(
-                              color: Colors.grey.shade300,
+
+                              border: Border.all(color:Colors.purpleAccent),
                               borderRadius: BorderRadius.circular(10)),
                           child: Container(
                             padding: EdgeInsets.only(left: 20),

@@ -76,6 +76,7 @@ class _home1State extends State<home1> {
                       style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
+                          fontFamily: "Lato",
                           color: Colors.black),
                     ),
                   ),
@@ -87,6 +88,7 @@ class _home1State extends State<home1> {
                       style: TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
+                          fontFamily: "Lato",
                           color: Colors.blue),
                     ),
                   ),

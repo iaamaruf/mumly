@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:new_mumlly_app/Utilities/images.dart';
 import 'package:syncfusion_flutter_barcodes/barcodes.dart';
 import 'package:barcode/barcode.dart';
 
@@ -19,7 +20,9 @@ class _ticketState extends State<ticket> {
           toolbarHeight: 80,
           title: const Text(
             '          My Ticket',style:
-          TextStyle(fontSize: 18,fontWeight: FontWeight.w500),
+          TextStyle(fontSize: 18,
+              fontFamily: "Lato",
+              fontWeight: FontWeight.w500),
           ),
 
           flexibleSpace: Container(
@@ -67,11 +70,14 @@ class _ticketState extends State<ticket> {
                             Container(
                               height: 200,
                               width: 320,
+                              child: Image.asset(
+                                AppImage.getPath("barcode"),
+                                fit: BoxFit.fill,),
                               margin: EdgeInsets.fromLTRB(15, 15, 0, 0),
 
                               decoration: BoxDecoration(
                                   color: Colors.grey,
-                                  borderRadius: BorderRadius.circular(10)
+                                  borderRadius: BorderRadius.circular(20)
                               ),
 
 
@@ -87,11 +93,13 @@ class _ticketState extends State<ticket> {
                             children: [
                               Text('Cimengis Musical Festival', style: TextStyle(
                                   fontSize: 18, fontWeight: FontWeight.w500,
+                                  fontFamily: "Lato",
                                   color: Colors.black),),
                               SizedBox(height: 10,),
 
                               Text('By organizer', style: TextStyle(
                                   fontSize: 15, fontWeight: FontWeight.bold,
+                                  fontFamily: "Lato",
                                   color: Colors.grey),),
 
 
@@ -118,6 +126,7 @@ class _ticketState extends State<ticket> {
 
                                     child: Text(' Date', style: TextStyle(
                                         fontSize: 15, fontWeight: FontWeight.bold,
+                                        fontFamily: "Lato",
                                         color: Colors.grey),),
                                   ),
                                   Spacer(),
@@ -125,6 +134,7 @@ class _ticketState extends State<ticket> {
                                   Container(
                                     child: Text('Times', style: TextStyle(
                                         fontSize: 15, fontWeight: FontWeight.bold,
+                                        fontFamily: "Lato",
                                         color: Colors.grey),),
                                   ),
 
@@ -138,6 +148,7 @@ class _ticketState extends State<ticket> {
 
                                     child: Text('23 March 2023', style: TextStyle(
                                         fontSize: 15, fontWeight: FontWeight.bold,
+                                        fontFamily: "Lato",
                                         color: Colors.black),),
                                   ),
                                   Spacer(),
@@ -148,6 +159,7 @@ class _ticketState extends State<ticket> {
 
                                         child: Text('1:30 PM', style: TextStyle(
                                             fontSize: 15, fontWeight: FontWeight.bold,
+                                            fontFamily: "Lato",
                                             color: Colors.black),),
                                       ),
 
@@ -220,7 +232,7 @@ class _ticketState extends State<ticket> {
                       backgroundColor: Colors.deepPurple,
                     ),
                     child: Text('Save ticket', style: TextStyle(
-                        fontSize: 18,
+                        fontSize: 18,fontFamily: "Lato",
                         color: Colors.white),),
                   )),
             ),

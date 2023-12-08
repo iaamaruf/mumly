@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:new_mumlly_app/Screens/my_app_screen/allEventPage.dart';
 import 'package:new_mumlly_app/Screens/my_app_screen/billing.dart';
+import 'package:new_mumlly_app/Screens/my_app_screen/profile_events.dart';
 import 'package:new_mumlly_app/Utilities/colors.dart';
 import 'package:new_mumlly_app/Utilities/images.dart';
 import 'package:new_mumlly_app/Utilities/size_config.dart';

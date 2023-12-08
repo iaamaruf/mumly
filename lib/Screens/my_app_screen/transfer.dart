@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:new_mumlly_app/Screens/my_app_screen/add_new_child.dart';
+import 'package:new_mumlly_app/Utilities/colors.dart';
 
 class Transfer_child extends StatefulWidget {
   const Transfer_child({super.key});
@@ -17,6 +18,7 @@ class _Transfer_childState extends State<Transfer_child> {
           toolbarHeight: 130,
           title: const Text(
             'Tranfer Child',
+            style: TextStyle(fontFamily: "Lato",),
           ),
           flexibleSpace: Container(
             decoration: BoxDecoration(
@@ -64,7 +66,9 @@ class _Transfer_childState extends State<Transfer_child> {
                         margin: EdgeInsets.fromLTRB(15, 15, 0, 0),
                         child: Text(
                           'Term',
-                          style: TextStyle(fontSize: 18, color: Colors.black),
+                          style: TextStyle(fontSize: 18,
+                              fontFamily: "Lato",
+                              color: Colors.black),
                         ),
                       ),
                     ],
@@ -76,15 +80,15 @@ class _Transfer_childState extends State<Transfer_child> {
                     children: [
                       Container(
                           margin: EdgeInsets.only(left: 30),
-                          height: 40,
-                          width: 230,
+                          height: 45,
+                          width: 240,
                           padding: EdgeInsets.only(
                             left: 20,
                             right: 20,
                           ),
                           decoration: BoxDecoration(
-                              color: Colors.grey.shade300,
-                              borderRadius: BorderRadius.circular(10)),
+                              border: Border.all(color:Colors.deepPurple,),
+                              borderRadius: BorderRadius.circular(20)),
                           child: Container(
                             padding: EdgeInsets.only(left: 20),
                             child: DropdownButton<String>(
@@ -99,7 +103,9 @@ class _Transfer_childState extends State<Transfer_child> {
                                   value: value,
                                   child: Text(
                                     value,
-                                    style: TextStyle(fontSize: 20),
+                                    style: TextStyle(fontSize: 20,
+                                      fontFamily: "Lato",
+                                    ),
                                   ),
                                 );
                               }).toList(),
@@ -109,7 +115,8 @@ class _Transfer_childState extends State<Transfer_child> {
                                 });
                               },
                             ),
-                          )),
+                          )
+                      ),
                     ],
                   ),
                   SizedBox(
@@ -121,7 +128,8 @@ class _Transfer_childState extends State<Transfer_child> {
                         margin: EdgeInsets.only(left: 15),
                         child: Text(
                           'School',
-                          style: TextStyle(fontSize: 18, color: Colors.black),
+                          style: TextStyle(fontSize: 18,fontFamily: "Lato",
+                              color: Colors.black),
                         ),
                       ),
                     ],
@@ -133,15 +141,15 @@ class _Transfer_childState extends State<Transfer_child> {
                     children: [
                       Container(
                           margin: EdgeInsets.only(left: 30),
-                          height: 40,
-                          width: 230,
+                          height: 45,
+                          width: 240,
                           padding: EdgeInsets.only(
                             left: 20,
                             right: 20,
                           ),
                           decoration: BoxDecoration(
-                              color: Colors.grey.shade300,
-                              borderRadius: BorderRadius.circular(10)),
+                              border: Border.all(color:Colors.deepPurple),
+                              borderRadius: BorderRadius.circular(20)),
                           child: Container(
                             padding: EdgeInsets.only(left: 20),
                             child: DropdownButton<String>(
@@ -156,7 +164,8 @@ class _Transfer_childState extends State<Transfer_child> {
                                   value: value,
                                   child: Text(
                                     value,
-                                    style: TextStyle(fontSize: 20),
+                                    style: TextStyle(fontSize: 20,
+                                      fontFamily: "Lato",),
                                   ),
                                 );
                               }).toList(),
@@ -166,7 +175,8 @@ class _Transfer_childState extends State<Transfer_child> {
                                 });
                               },
                             ),
-                          )),
+                          )
+                      ),
                     ],
                   ),
                   SizedBox(
@@ -178,7 +188,9 @@ class _Transfer_childState extends State<Transfer_child> {
                         margin: EdgeInsets.only(left: 15),
                         child: Text(
                           'Share Assesment report',
-                          style: TextStyle(fontSize: 18, color: Colors.black),
+                          style: TextStyle(fontSize: 18,
+                              fontFamily: "Lato",
+                              color: Colors.black),
                         ),
                       ),
                     ],
@@ -190,15 +202,15 @@ class _Transfer_childState extends State<Transfer_child> {
                     children: [
                       Container(
                           margin: EdgeInsets.only(left: 30),
-                          height: 40,
-                          width: 230,
+                          height: 45,
+                          width: 240,
                           padding: EdgeInsets.only(
                             left: 20,
                             right: 20,
                           ),
                           decoration: BoxDecoration(
-                              color: Colors.grey.shade300,
-                              borderRadius: BorderRadius.circular(10)),
+                              border: Border.all(color:Colors.deepPurple),
+                              borderRadius: BorderRadius.circular(20)),
                           child: Container(
                             padding: EdgeInsets.only(left: 20),
                             child: DropdownButton<String>(
@@ -223,7 +235,8 @@ class _Transfer_childState extends State<Transfer_child> {
                                 });
                               },
                             ),
-                          )),
+                          )
+                      ),
                     ],
                   ),
                 ],
@@ -233,7 +246,7 @@ class _Transfer_childState extends State<Transfer_child> {
           SizedBox(height: 60,),
           SizedBox(
               height: 40,
-              width: 240,
+              width: 280,
               child: ElevatedButton(
                 onPressed: () {},
                 style: ElevatedButton.styleFrom(
@@ -244,7 +257,8 @@ class _Transfer_childState extends State<Transfer_child> {
                     context,
                     MaterialPageRoute(builder: (context) => add_new_child()),
                   ),
-                  child: Text('Add Child' , style: TextStyle(color: Colors.white),
+                  child: Text('Add Child' , style: TextStyle(color: Colors.white,
+                    fontFamily: "Lato",),
                   ),
                 ),
               ))
