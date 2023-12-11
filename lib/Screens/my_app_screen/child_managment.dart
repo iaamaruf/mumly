@@ -1,5 +1,7 @@
 
 import 'package:flutter/material.dart';
+import 'package:new_mumlly_app/Screens/Student/attendance_screen.dart';
+import 'package:new_mumlly_app/Screens/Student/student_home_screen.dart';
 import 'package:new_mumlly_app/Screens/my_app_screen/allEventPage.dart';
 import 'package:new_mumlly_app/Screens/my_app_screen/lession_plan.dart';
 import 'package:new_mumlly_app/Screens/my_app_screen/profile_events.dart';
@@ -10,6 +12,7 @@ import 'package:new_mumlly_app/Screens/my_app_screen/wow_moments.dart';
 import 'package:new_mumlly_app/Utilities/images.dart';
 
 class HomeScrean extends StatefulWidget {
+  static const String routeName = "HomeScrean";
   const HomeScrean({super.key});
 
   @override
@@ -571,6 +574,49 @@ class _HomeScreanState extends State<HomeScrean> {
           )
         ],
       ),
+      bottomNavigationBar: BottomAppBar(
+          child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: <Widget>[
+                IconButton(
+                    icon: Icon(Icons.home_filled),
+
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => StudentHomeScreen(),
+                        ),
+                      );
+                    }
+                ),
+                IconButton(
+                    icon: Icon(Icons.calendar_today),
+
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => AttendanceScreen(),
+                        ),
+                      );
+                    }
+                ),
+                IconButton(
+                    icon: Icon(Icons.person),
+
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => HomeScrean(),
+                        ),
+                      );
+                    }
+                ),
+
+              ]
+          )),
     );
   }
 }

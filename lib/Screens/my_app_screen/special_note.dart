@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:new_mumlly_app/Screens/my_app_screen/dropdwon.dart';
 import 'package:new_mumlly_app/Utilities/colors.dart';
 import 'package:new_mumlly_app/Utilities/size_config.dart';
 
@@ -83,40 +84,16 @@ class _Special_notesState extends State<Special_notes> {
                     children: [
                       Container(
                           margin: EdgeInsets.only(left: 30),
-                          height: 40,
+                          height: 50,
                           width: 240,
+                          padding: EdgeInsets.all(5),
 
-                          padding: EdgeInsets.only(
-                            left: 20,
-                            right: 20,
-                          ),
+
                           decoration: BoxDecoration(
 
-                              border: Border.all(color:Colors.purpleAccent),
+                              border: Border.all(color:Colors.deepPurple.shade100),
                               borderRadius: BorderRadius.circular(10)),
-                          child: Container(
-                            padding: EdgeInsets.only(left: 20),
-
-                            child: DropdownButton<String>(
-                              value: dropdownValue,
-                              items: <String>['type of note ?', 'one', 'two', 'three']
-                                  .map<DropdownMenuItem<String>>((String value) {
-                                return DropdownMenuItem<String>(
-                                  value: value,
-                                  child: Text(
-                                    value,
-                                    style: TextStyle(fontSize: 20),
-                                  ),
-                                );
-                              }).toList(),
-                              onChanged: (String? newValue) {
-                                setState(() {
-                                  dropdownValue = newValue!;
-                                });
-                              },
-
-                            ),
-                          )),
+                          child: CustomDropdown()),
                     ],
                   ),
                   SizedBox(height: 22,),
@@ -127,7 +104,8 @@ class _Special_notesState extends State<Special_notes> {
                       child: Text('Write your notes', style: TextStyle(
                           fontSize: 18,
                           color: Colors.black),),
-                    ),],
+                    ),
+                    ],
                   ),
                   SizedBox(height: 14,),
                   TextField(

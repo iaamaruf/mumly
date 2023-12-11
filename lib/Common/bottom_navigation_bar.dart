@@ -70,9 +70,7 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
                     Container(
                         height: 20,
                         width: 20,
-                        child: Image.asset(
-                          AppImage.getPath("home_icon"),
-                          fit: BoxFit.fill,)
+                        child: Icon(Icons.home_filled)
                     ),
 
                   ],
@@ -92,14 +90,14 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
                     Container(
                         height: 20,
                         width: 20,
-                        child: Image.asset(
-                          AppImage.getPath("attendence_icon"),
-                          fit: BoxFit.fill,)
+                        child: Icon(Icons.calendar_today)
                     ),
 
                   ],
                 ),
               ),
+
+
               InkWell(
                 //minWidth: 40,
                 onTap: () => Navigator.push(
@@ -112,9 +110,7 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
                     Container(
                         height: 20,
                         width: 20,
-                        child: Image.asset(
-                          AppImage.getPath("people_icon"),
-                          fit: BoxFit.fill,)
+                        child: Icon(Icons.person)
                     ),
 
                   ],

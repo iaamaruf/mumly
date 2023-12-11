@@ -49,7 +49,7 @@ class _billingState extends State<billing> {
                     fontSize: 17, fontWeight: FontWeight.bold,
                     fontFamily: "Lato",
                     color: Colors.black),),
-                SizedBox(width: 70,),
+                SizedBox(width: 90,),
                 Container(
                     margin: EdgeInsets.all(22),
                   height: SizeConfig.screenHeight * 0.05,
@@ -474,8 +474,8 @@ class _billingState extends State<billing> {
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: <Widget>[
                   IconButton(
-                      icon: Icon(Icons.home),
-                      color: AppColor.gray,
+                      icon: Icon(Icons.home_filled),
+
                       onPressed: () {
                         Navigator.push(
                           context,
@@ -486,8 +486,8 @@ class _billingState extends State<billing> {
                       }
                   ),
                   IconButton(
-                      icon: Icon(Icons.menu_book),
-                      color: Colors.grey,
+                      icon: Icon(Icons.calendar_today),
+
                       onPressed: () {
                         Navigator.push(
                           context,
@@ -498,8 +498,8 @@ class _billingState extends State<billing> {
                       }
                   ),
                   IconButton(
-                      icon: Icon(Icons.person_outline),
-                      color: Colors.grey,
+                      icon: Icon(Icons.person),
+
                       onPressed: () {
                         Navigator.push(
                           context,

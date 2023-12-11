@@ -41,7 +41,7 @@ class _wow_momentsState extends State<wow_moments> {
       body: Column(
         children: [
           Container(
-            margin:EdgeInsets.fromLTRB(30, 50, 10, 20),
+            margin:EdgeInsets.fromLTRB(20, 50, 10, 20),
             height: SizeConfig.screenHeight * 0.095,
             width: SizeConfig.screenWidth * 0.88,
 
@@ -945,135 +945,142 @@ class _wow_momentsState extends State<wow_moments> {
             height: 5,
           ),
           Expanded(
-            child: Row(
-              children: [
-                SizedBox(width: 25),
-                SingleChildScrollView(
-                  scrollDirection: Axis.vertical,
-                  child: Column(
+            child: SingleChildScrollView(
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  SizedBox(width: 25),
+                  Column(
                     children: [
-                      Container(
-                          height: 160,
-                          width: 162,
-                          decoration: BoxDecoration(
-                            color: Colors.grey.shade400,
-                            borderRadius: BorderRadius.circular(20),
-                          )),
-                      SizedBox(height: 5),
-                      Container(
-                          height: 100,
-                          width: 162,
-                          decoration: BoxDecoration(
-                            color: Colors.grey.shade400,
-                            borderRadius: BorderRadius.circular(20),
-                          )),
-                      SizedBox(height: 5),
-                      Container(
-                          height: 135,
-                          width: 162,
-                          decoration: BoxDecoration(
-                            color: Colors.grey.shade400,
-                            borderRadius: BorderRadius.circular(20),
-                          )),
-                      SizedBox(height: 5),
-                      Container(
-                          height: 135,
-                          width: 162,
-                          decoration: BoxDecoration(
-                            color: Colors.grey.shade400,
-                            borderRadius: BorderRadius.circular(20),
-                          )),
-                      SizedBox(height: 5),
-                      Container(
-                          height: 80,
-                          width: 162,
-                          decoration: BoxDecoration(
-                            color: Colors.grey.shade400,
-                            borderRadius: BorderRadius.circular(20),
-                          )),
-                      SizedBox(height: 5),
-                      Container(
-                          height: 130,
-                          width: 162,
-                          decoration: BoxDecoration(
-                            color: Colors.grey.shade400,
-                            borderRadius: BorderRadius.circular(20),
-                          )),
-                      SizedBox(height: 5),
-                      Container(
-                          height: 45,
-                          width: 162,
-                          decoration: BoxDecoration(
-                            color: Colors.grey.shade400,
-                            borderRadius: BorderRadius.circular(20),
-                          )),
+                      Column(
+                        children: [
+                          Container(
+                              height: 160,
+                              width: 162,
+                              decoration: BoxDecoration(
+                                color: Colors.grey.shade400,
+                                borderRadius: BorderRadius.circular(20),
+                              )),
+                          SizedBox(height: 5),
+                          Container(
+                              height: 100,
+                              width: 162,
+                              decoration: BoxDecoration(
+                                color: Colors.grey.shade400,
+                                borderRadius: BorderRadius.circular(20),
+                              )),
+                          SizedBox(height: 5),
+                          Container(
+                              height: 135,
+                              width: 162,
+                              decoration: BoxDecoration(
+                                color: Colors.grey.shade400,
+                                borderRadius: BorderRadius.circular(20),
+                              )),
+                          SizedBox(height: 5),
+                          Container(
+                              height: 135,
+                              width: 162,
+                              decoration: BoxDecoration(
+                                color: Colors.grey.shade400,
+                                borderRadius: BorderRadius.circular(20),
+                              )),
+                          SizedBox(height: 5),
+                          Container(
+                              height: 80,
+                              width: 162,
+                              decoration: BoxDecoration(
+                                color: Colors.grey.shade400,
+                                borderRadius: BorderRadius.circular(20),
+                              )),
+                          SizedBox(height: 5),
+                          Container(
+                              height: 130,
+                              width: 162,
+                              decoration: BoxDecoration(
+                                color: Colors.grey.shade400,
+                                borderRadius: BorderRadius.circular(20),
+                              )),
+                          SizedBox(height: 5),
+                          Container(
+                              height: 45,
+                              width: 162,
+                              decoration: BoxDecoration(
+                                color: Colors.grey.shade400,
+                                borderRadius: BorderRadius.circular(20),
+                              )),
+                        ],
+                      ),
+
+                    ],
+
+                  ),
+                  SizedBox(width: 15),
+                  Column(
+                    children: [
+                      Column(
+                        children: [
+                          Container(
+                              height: 80,
+                              width: 162,
+                              decoration: BoxDecoration(
+                                color: Colors.grey.shade400,
+                                borderRadius: BorderRadius.circular(20),
+                              )),
+                          SizedBox(height: 5),
+                          Container(
+                              height: 130,
+                              width: 162,
+                              decoration: BoxDecoration(
+                                color: Colors.grey.shade400,
+                                borderRadius: BorderRadius.circular(20),
+                              )),
+                          SizedBox(height: 5),
+                          Container(
+                              height: 100,
+                              width: 162,
+                              decoration: BoxDecoration(
+                                color: Colors.grey.shade400,
+                                borderRadius: BorderRadius.circular(20),
+                              )),
+                          SizedBox(height: 5),
+                          Container(
+                              height: 135,
+                              width: 162,
+                              decoration: BoxDecoration(
+                                color: Colors.grey.shade400,
+                                borderRadius: BorderRadius.circular(20),
+                              )),
+                          SizedBox(height: 5),
+                          Container(
+                              height: 160,
+                              width: 162,
+                              decoration: BoxDecoration(
+                                color: Colors.grey.shade400,
+                                borderRadius: BorderRadius.circular(20),
+                              )),
+                          SizedBox(height: 5),
+                          Container(
+                              height: 80,
+                              width: 162,
+                              decoration: BoxDecoration(
+                                color: Colors.grey.shade400,
+                                borderRadius: BorderRadius.circular(20),
+                              )),
+                          SizedBox(height: 5),
+                          Container(
+                              height: 135,
+                              width: 162,
+                              decoration: BoxDecoration(
+                                color: Colors.grey.shade400,
+                                borderRadius: BorderRadius.circular(20),
+                              )),
+                        ],
+                      ),
                     ],
                   ),
-                ),
-                SizedBox(width: 20),
-                SingleChildScrollView(
-                  scrollDirection: Axis.vertical,
-                  child: Column(
-                    children: [
-                      Container(
-                          height: 80,
-                          width: 162,
-                          decoration: BoxDecoration(
-                            color: Colors.grey.shade400,
-                            borderRadius: BorderRadius.circular(20),
-                          )),
-                      SizedBox(height: 5),
-                      Container(
-                          height: 130,
-                          width: 162,
-                          decoration: BoxDecoration(
-                            color: Colors.grey.shade400,
-                            borderRadius: BorderRadius.circular(20),
-                          )),
-                      SizedBox(height: 5),
-                      Container(
-                          height: 100,
-                          width: 162,
-                          decoration: BoxDecoration(
-                            color: Colors.grey.shade400,
-                            borderRadius: BorderRadius.circular(20),
-                          )),
-                      SizedBox(height: 5),
-                      Container(
-                          height: 135,
-                          width: 162,
-                          decoration: BoxDecoration(
-                            color: Colors.grey.shade400,
-                            borderRadius: BorderRadius.circular(20),
-                          )),
-                      SizedBox(height: 5),
-                      Container(
-                          height: 160,
-                          width: 162,
-                          decoration: BoxDecoration(
-                            color: Colors.grey.shade400,
-                            borderRadius: BorderRadius.circular(20),
-                          )),
-                      SizedBox(height: 5),
-                      Container(
-                          height: 80,
-                          width: 162,
-                          decoration: BoxDecoration(
-                            color: Colors.grey.shade400,
-                            borderRadius: BorderRadius.circular(20),
-                          )),
-                      SizedBox(height: 5),
-                      Container(
-                          height: 135,
-                          width: 162,
-                          decoration: BoxDecoration(
-                            color: Colors.grey.shade400,
-                            borderRadius: BorderRadius.circular(20),
-                          )),
-                    ],
-                  ),
-                ),
-              ],
+                ],
+              ),
             ),
           )
         ],

@@ -87,7 +87,7 @@ class _Transfer_childState extends State<Transfer_child> {
                             right: 20,
                           ),
                           decoration: BoxDecoration(
-                              border: Border.all(color:Colors.deepPurple,),
+                              border: Border.all(color:Colors.deepPurple.shade100,),
                               borderRadius: BorderRadius.circular(20)),
                           child: Container(
                             padding: EdgeInsets.only(left: 20),
@@ -148,7 +148,7 @@ class _Transfer_childState extends State<Transfer_child> {
                             right: 20,
                           ),
                           decoration: BoxDecoration(
-                              border: Border.all(color:Colors.deepPurple),
+                              border: Border.all(color:Colors.deepPurple.shade100),
                               borderRadius: BorderRadius.circular(20)),
                           child: Container(
                             padding: EdgeInsets.only(left: 20),
@@ -209,7 +209,7 @@ class _Transfer_childState extends State<Transfer_child> {
                             right: 20,
                           ),
                           decoration: BoxDecoration(
-                              border: Border.all(color:Colors.deepPurple),
+                              border: Border.all(color:Colors.deepPurple.shade100),
                               borderRadius: BorderRadius.circular(20)),
                           child: Container(
                             padding: EdgeInsets.only(left: 20),

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:new_mumlly_app/Screens/my_app_screen/billing.dart';
 import 'package:new_mumlly_app/Utilities/size_config.dart';
 
-import 'child_managment.dart';
 import 'invoice.dart';
 
 class view_all_bill extends StatefulWidget {
@@ -64,7 +63,7 @@ class _view_all_billState extends State<view_all_bill> {
                   ),
                 ),
                 SizedBox(
-                  width: 60,
+                  width: 70,
                 ),
                 Container(
                   margin: EdgeInsets.all(22),
@@ -85,7 +84,7 @@ class _view_all_billState extends State<view_all_bill> {
                   width: SizeConfig.screenWidth* 0.83,
                   margin: EdgeInsets.fromLTRB(30, 10, 0, 0),
                   decoration: BoxDecoration(
-                      color: Colors.grey,
+                      color: Colors.grey.shade200,
                       borderRadius: BorderRadius.circular(20)),
                   child: Column(
                     children: [
@@ -254,7 +253,7 @@ class _view_all_billState extends State<view_all_bill> {
                   width: SizeConfig.screenWidth* 0.83,
                   margin: EdgeInsets.fromLTRB(30, 10, 0, 0),
                   decoration: BoxDecoration(
-                      color: Colors.grey,
+                      color: Colors.grey.shade200,
                       borderRadius: BorderRadius.circular(20)),
                   child: Column(
                     children: [
@@ -414,6 +413,7 @@ class _view_all_billState extends State<view_all_bill> {
               ],
             ),
           ],
+
         ),
       ),
     );

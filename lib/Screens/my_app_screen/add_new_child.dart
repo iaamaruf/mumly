@@ -111,7 +111,7 @@ class _add_new_childState extends State<add_new_child> {
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(15),
                           border: Border.all(
-                            color: Colors.purple.shade200,
+                            color: Colors.deepPurple.shade100,
                           ),
                         ),
                         child: TextField (
@@ -174,7 +174,7 @@ class _add_new_childState extends State<add_new_child> {
                       decoration: BoxDecoration(
         
                         borderRadius: BorderRadius.circular(15),
-                        border: Border.all(color: Colors.purple.shade200,),
+                        border: Border.all(color: Colors.deepPurple.shade100,),
 
         
                       ),
@@ -230,7 +230,7 @@ class _add_new_childState extends State<add_new_child> {
                     decoration: BoxDecoration(
 
                       borderRadius: BorderRadius.circular(15),
-                      border: Border.all(color: Colors.purple.shade200,),
+                      border: Border.all(color: Colors.deepPurple.shade100,),
 
                     ),
                     child: Container(
@@ -285,7 +285,7 @@ class _add_new_childState extends State<add_new_child> {
                     decoration: BoxDecoration(
 
                       borderRadius: BorderRadius.circular(15),
-                      border: Border.all(color: Colors.purple.shade200,),
+                      border: Border.all(color: Colors.deepPurple.shade100,),
 
                     ),
                     child: Container(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:new_mumlly_app/Screens/my_app_screen/AlleventPage.dart';
 import 'package:new_mumlly_app/Utilities/images.dart';
 import 'package:syncfusion_flutter_barcodes/barcodes.dart';
 import 'package:barcode/barcode.dart';
@@ -231,9 +232,16 @@ class _ticketState extends State<ticket> {
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.deepPurple,
                     ),
-                    child: Text('Save ticket', style: TextStyle(
-                        fontSize: 18,fontFamily: "Lato",
-                        color: Colors.white),),
+                    child: InkWell(
+                      onTap: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => event_page()),
+                      ),
+
+                      child: Text('Save ticket', style: TextStyle(
+                          fontSize: 18,fontFamily: "Lato",
+                          color: Colors.white),),
+                    ),
                   )),
             ),
           ],
